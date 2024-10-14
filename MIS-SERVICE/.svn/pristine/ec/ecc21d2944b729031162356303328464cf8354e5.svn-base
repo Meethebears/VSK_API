@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+using Dapper;
+using MySql.Data.MySqlClient;
+using REPO.Models;
+
+namespace REPO.Controllers
+{
+    public class MasterRepository
+    {
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+
+        public SqlConnection mscon;
+
+        private void Connection()
+        {
+
+            string msconstr = ConfigurationManager.ConnectionStrings["VSK_Data"].ToString();
+            mscon = new SqlConnection(msconstr);
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+
+
+        #region Mas_gcode_get
+        public List<MasterModel> Mas_gcode_get(MasterModel MasterModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@code", MasterModel.code);
+                objParam.Add("@gname", MasterModel.gname);
+                objParam.Add("@codechr", MasterModel.codechr);
+                objParam.Add("@ctype", MasterModel.ctype);
+
+                Connection();
+                mscon.Open();
+                List<MasterModel> MasList = SqlMapper.Query<MasterModel>(mscon, "SP_ACC_GCODE_GET", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return MasList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Mas_gcode_function
+        public List<MasterModel> Mas_gcode_function(MasterModel MasterModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+                objParam.Add("@code", MasterModel.code);
+                objParam.Add("@gname", MasterModel.gname);
+                objParam.Add("@codechr", MasterModel.codechr);
+                objParam.Add("@ctype", MasterModel.ctype);
+                objParam.Add("@userid", MasterModel.userid);
+                objParam.Add("@rec", MasterModel.rec);
+                objParam.Add("@function_type", MasterModel.function_type);
+
+
+                Connection();
+                mscon.Open();
+                List<MasterModel> MasList = SqlMapper.Query<MasterModel>(mscon, "SP_Gcode_Function", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return MasList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+
+    }
+}

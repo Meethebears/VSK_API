@@ -1,0 +1,270 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+using Dapper;
+using MySql.Data.MySqlClient;
+using REPO.Models;
+
+namespace REPO.Controllers
+{
+    public class MktRepository
+    {
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+        public MySqlConnection con;
+        public SqlConnection mis_mkt;
+
+        private void Connection()
+        {
+            string myconstr = ConfigurationManager.ConnectionStrings["MySqlConn"].ToString();
+            con = new MySqlConnection(myconstr);
+
+            string mis_mktstr = ConfigurationManager.ConnectionStrings["VSK_MKT"].ToString();
+            mis_mkt = new SqlConnection(mis_mktstr);
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+
+
+        #region Campaign_Setup_Add
+        public void Campaign_Setup_Add(campaign_modal campaign_modal)
+        {
+            try
+            {
+                DynamicParameters objParam = new DynamicParameters();
+                //string Receive_date_est = PkPoIVModel.Receive_date_est == DateTime.MinValue ? null : PkPoIVModel.Receive_date_est.ToString("yyyy-MM-dd hh:mm");
+
+                objParam.Add("@campaign_start_datetime", campaign_modal.campaign_start_datetime);
+                objParam.Add("@campaign_end_datetime", campaign_modal.campaign_end_datetime);
+                objParam.Add("@campaign_name", campaign_modal.campaign_name);
+                objParam.Add("@campaign_type", campaign_modal.campaign_type);
+                objParam.Add("@campaign_discount", campaign_modal.campaign_discount);
+                objParam.Add("@campaign_percent", campaign_modal.campaign_percent);
+                objParam.Add("@campaign_minprice", campaign_modal.campaign_minprice);
+                objParam.Add("@campaign_maxdiscount", campaign_modal.campaign_maxdiscount);
+                objParam.Add("@campaign_qty", campaign_modal.campaign_qty);
+                objParam.Add("@campaign_code", campaign_modal.campaign_code);
+                objParam.Add("@created_by", campaign_modal.created_by);
+                objParam.Add("@record_status", campaign_modal.record_status);
+
+                Connection(); 
+                mis_mkt.Open();
+                mis_mkt.Execute("PT_Campaign_Setup_Add", objParam, commandType: CommandType.StoredProcedure);
+                mis_mkt.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Campaign_Setup_Get
+        public List<campaign_modal> Campaign_Setup_Get(campaign_modal campaign_modal)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@id", campaign_modal.id);
+                objParam.Add("@campaign_name", campaign_modal.campaign_name);
+                objParam.Add("@record_status", campaign_modal.record_status);
+                objParam.Add("@created_by", campaign_modal.created_by);
+                objParam.Add("@updated_by", campaign_modal.updated_by);
+                objParam.Add("@mode", campaign_modal.mode);
+
+                Connection();
+                mis_mkt.Open();
+                List<campaign_modal> MktList = SqlMapper.Query<campaign_modal>(mis_mkt, "PT_Campaign_Setup_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mis_mkt.Close();
+                return MktList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Campaign_Setup_Update
+        public void Campaign_Setup_Update(campaign_modal campaign_modal)
+        {
+            try
+            {
+                DynamicParameters objParam = new DynamicParameters();
+                //string Receive_date_est = PkPoIVModel.Receive_date_est == DateTime.MinValue ? null : PkPoIVModel.Receive_date_est.ToString("yyyy-MM-dd hh:mm");
+
+                objParam.Add("@id", campaign_modal.id);
+                objParam.Add("@campaign_start_datetime", campaign_modal.campaign_start_datetime);
+                objParam.Add("@campaign_end_datetime", campaign_modal.campaign_end_datetime);
+                objParam.Add("@campaign_name", campaign_modal.campaign_name);
+                objParam.Add("@campaign_type", campaign_modal.campaign_type);
+                objParam.Add("@campaign_discount", campaign_modal.campaign_discount);
+                objParam.Add("@campaign_percent", campaign_modal.campaign_percent);
+                objParam.Add("@campaign_minprice", campaign_modal.campaign_minprice);
+                objParam.Add("@campaign_maxdiscount", campaign_modal.campaign_maxdiscount);
+                objParam.Add("@campaign_qty", campaign_modal.campaign_qty);
+                objParam.Add("@updated_by", campaign_modal.created_by);
+                objParam.Add("@record_status", campaign_modal.record_status);
+
+                Connection();
+                mis_mkt.Open();
+                mis_mkt.Execute("PT_Campaign_Setup_Update", objParam, commandType: CommandType.StoredProcedure);
+                mis_mkt.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Check_Dup_Campaign
+        public List<campaign_modal> Check_Dup_Campaign(campaign_modal campaign_modal)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@campaign_start_datetime", campaign_modal.campaign_start_datetime);
+                objParam.Add("@campaign_end_datetime", campaign_modal.campaign_end_datetime);
+                objParam.Add("@id", campaign_modal.id);
+                
+                Connection();
+                mis_mkt.Open();
+                List<campaign_modal> MktList = SqlMapper.Query<campaign_modal>(mis_mkt, "PT_Check_Dup_Campaign", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mis_mkt.Close();
+                return MktList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Voucher_Redeem_Add
+        public void Voucher_Redeem_Add(redeem_modal redeem_modal)
+        {
+            try
+            {
+                DynamicParameters objParam = new DynamicParameters();
+                //string Receive_date_est = PkPoIVModel.Receive_date_est == DateTime.MinValue ? null : PkPoIVModel.Receive_date_est.ToString("yyyy-MM-dd hh:mm");
+                
+                objParam.Add("@redeem_code", redeem_modal.redeem_code);
+                objParam.Add("@campaign_id", redeem_modal.campaign_id);
+                objParam.Add("@created_by", redeem_modal.created_by); 
+                objParam.Add("@record_status", redeem_modal.record_status);
+
+                Connection();
+                mis_mkt.Open();
+                mis_mkt.Execute("PT_Voucher_Redeem_Add", objParam, commandType: CommandType.StoredProcedure);
+                mis_mkt.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Voucher_Redeem_Get
+        public List<redeem_modal> Voucher_Redeem_Get(redeem_modal redeem_modal)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@id", redeem_modal.id);
+                objParam.Add("@campaign_id", redeem_modal.@campaign_id);
+                objParam.Add("@redeem_code", redeem_modal.redeem_code);
+                objParam.Add("@record_status", redeem_modal.record_status);
+                objParam.Add("@created_by", redeem_modal.created_by);
+                objParam.Add("@updated_by", redeem_modal.updated_by);
+                objParam.Add("@mode", redeem_modal.mode);
+
+                Connection();
+                mis_mkt.Open();
+                List<redeem_modal> MktList = SqlMapper.Query<redeem_modal>(mis_mkt, "PT_Voucher_Redeem_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mis_mkt.Close();
+                return MktList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Check_Campaign_Setup
+        public List<campaign_modal> Check_Campaign_Setup(campaign_modal campaign_modal)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@mode", campaign_modal.mode);
+                objParam.Add("@pMessage", campaign_modal.pMessage);
+
+                Connection();
+                mis_mkt.Open();
+                List<campaign_modal> MktList = SqlMapper.Query<campaign_modal>(mis_mkt, "PT_Check_Campaign_Setup", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mis_mkt.Close();
+                return MktList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Voucher_Redeem_Salefile_Get
+        public List<redeem_modal> Voucher_Redeem_Salefile_Get(redeem_modal redeem_modal)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@mode", redeem_modal.mode);
+
+                Connection();
+                mis_mkt.Open();
+                List<redeem_modal> MktList = SqlMapper.Query<redeem_modal>(mis_mkt, "PT_Voucher_Redeem_Salefile_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mis_mkt.Close();
+                return MktList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+    }
+}

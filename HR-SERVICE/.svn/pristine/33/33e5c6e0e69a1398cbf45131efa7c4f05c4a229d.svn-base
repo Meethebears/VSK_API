@@ -1,0 +1,301 @@
+﻿using REPO.Models;
+using REPO.Controllers;
+using System.Web.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Globalization;
+
+namespace API.Controllers
+{
+    public class HrController : ApiController
+    {
+        #region Hr_Job_Get
+        [Route("api/Hr_Job_Get")]
+        [HttpGet]
+        public ResponseModel Hr_Job_Get([FromUri] JobModel JobModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                HrRepository HrRepository = new HrRepository();
+
+                List<JobModel> Hr_Job_Get = HrRepository.Hr_Job_Get(JobModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Hr_Job_Get;
+                _ResponseModel.length = Hr_Job_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Hr_Detail_Get
+        [Route("api/Hr_Detail_Get")]
+        [HttpGet]
+        public ResponseModel Hr_Detail_Get([FromUri] DetailModel DetailModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                HrRepository HrRepository = new HrRepository();
+
+                List<DetailModel> Hr_Detail_Get = HrRepository.Hr_Detail_Get(DetailModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Hr_Detail_Get;
+                _ResponseModel.length = Hr_Detail_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Hr_Quarter_Get
+        [Route("api/Hr_Quarter_Get")]
+        [HttpGet]
+        public ResponseModel Hr_Quarter_Get([FromUri] QuarterModel QuarterModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                HrRepository HrRepository = new HrRepository();
+
+                List<QuarterModel> Hr_Quarter_Get = HrRepository.Hr_Quarter_Get(QuarterModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Hr_Quarter_Get;
+                _ResponseModel.length = Hr_Quarter_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Hr_Create_Data
+        [Route("api/Hr_Create_Data")]
+        [HttpPost]
+        public ResponseModel Hr_Create_Data([FromBody] CreatePMSModel CreatePMSModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                HrRepository HrRepository = new HrRepository();
+
+                List<CreatePMSModel> Hr_Create_Data = HrRepository.Hr_Create_Data(CreatePMSModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Hr_Create_Data;
+                _ResponseModel.length = Hr_Create_Data.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Hr_Create_Score
+        [Route("api/Hr_Create_Score")]
+        [HttpPost]
+        public ResponseModel Hr_Create_Score(List<CreatePMSModel> CreatePMSModel)
+        {
+            try
+            {
+                List<CreatePMSModel> CreatePMSModelList = new List<CreatePMSModel>();
+                HrRepository HrRepository = new HrRepository();
+                foreach (var CreatePMSItem in CreatePMSModel)
+                {
+
+                    CreatePMSModel CreatePMSModel_data = new CreatePMSModel();
+                    CreatePMSModel_data.sc_data_id = CreatePMSItem.sc_data_id;
+                    CreatePMSModel_data.sc_topic = CreatePMSItem.sc_topic;
+                    CreatePMSModel_data.sc_score = CreatePMSItem.sc_score;
+                    CreatePMSModel_data.sc_comment = CreatePMSItem.sc_comment;
+                    CreatePMSModel_data.sc_c_point = CreatePMSItem.sc_c_point;
+                    CreatePMSModel_data.sc_c_improve = CreatePMSItem.sc_c_improve;
+                    CreatePMSModel_data.created_by = CreatePMSItem.created_by;
+                    CreatePMSModelList.Add(CreatePMSModel_data);
+                    HrRepository.Hr_Create_Score(CreatePMSModel_data);
+                }
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+        }
+        #endregion
+
+        #region Hr_Employee_Create
+        [Route("api/Hr_Employee_Create")]
+        [HttpPost]
+        public ResponseModel Hr_Employee_Create([FromBody] EmployeeModel EmployeeModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                HrRepository HrRepository = new HrRepository();
+
+                List<EmployeeModel> Hr_Employee_Create = HrRepository.Hr_Employee_Create(EmployeeModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Hr_Employee_Create;
+                _ResponseModel.length = Hr_Employee_Create.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Hr_Employee_Get
+        [Route("api/Hr_Employee_Get")]
+        [HttpGet]
+        public ResponseModel Hr_Employee_Get([FromUri] EmployeeModel EmployeeModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                HrRepository HrRepository = new HrRepository();
+
+                List<EmployeeModel> Hr_Employee_Get = HrRepository.Hr_Employee_Get(EmployeeModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Hr_Employee_Get;
+                _ResponseModel.length = Hr_Employee_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+    }
+}

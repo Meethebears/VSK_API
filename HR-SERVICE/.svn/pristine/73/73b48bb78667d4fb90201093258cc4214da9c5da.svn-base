@@ -1,0 +1,62 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+using Dapper;
+using MySql.Data.MySqlClient;
+using REPO.Models;
+
+namespace REPO.Controllers
+{
+    public class DashboardRepository
+    {
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+ 
+        public SqlConnection mscon;
+
+        private void Connection()
+        {
+           
+            string msconstr = ConfigurationManager.ConnectionStrings["MIS_SERVICE"].ToString();
+            mscon = new SqlConnection(msconstr);
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+
+        #region Dashboard_Get
+        public List<DashboardModel> Dashboard_Get(DashboardModel DashboardModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                
+                //objParam.Add("@PK_date", DashboardModel.PK_date);
+                //objParam.Add("@WH", DashboardModel.WH);
+                //objParam.Add("@PK_type", DashboardModel.PK_type);
+
+                Connection();
+                mscon.Open();
+                List<DashboardModel> DBList = SqlMapper.Query<DashboardModel>(mscon, "SP_INV_Dashboard_Onprocess_Get_V1_TEST", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return DBList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+    }
+}

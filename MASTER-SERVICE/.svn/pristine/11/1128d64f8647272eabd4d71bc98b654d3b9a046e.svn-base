@@ -1,0 +1,518 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+using Dapper;
+using MySql.Data.MySqlClient;
+using REPO.Models;
+
+namespace REPO.Controllers
+{
+    public class HrRepository
+    {
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+
+        public SqlConnection mscon;
+
+        private void Connection()
+        {
+
+            string msconstr = ConfigurationManager.ConnectionStrings["VSK_HR"].ToString();
+            mscon = new SqlConnection(msconstr);
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+
+        #region Hr_Employee_Detail
+        public List<DetailModel> Hr_Employee_Detail(DetailModel DetailModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@employee_code", DetailModel.employee_code);
+
+                Connection();
+                mscon.Open();
+                List<DetailModel> HrList = SqlMapper.Query<DetailModel>(mscon, "SP_Hr_employee_Detail", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Employee_Time
+        public List<DetailModel> Hr_Employee_Time(DetailModel DetailModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@employee_code", DetailModel.employee_code);
+                objParam.Add("@data_quarter", DetailModel.data_quarter);
+
+                Connection();
+                mscon.Open();
+                List<DetailModel> HrList = SqlMapper.Query<DetailModel>(mscon, "SP_Hr_Employee_Time", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Quarter_Get
+        public List<QuarterModel> Hr_Quarter_Get(QuarterModel QuarterModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@quarter_id", QuarterModel.quarter_id);
+
+                Connection();
+                mscon.Open();
+                List<QuarterModel> HrList = SqlMapper.Query<QuarterModel>(mscon, "SP_Hr_Quarter_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Quarter_Create 
+        public List<QuarterModel> Hr_Quarter_Create(QuarterModel QuarterModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@quarter_code", QuarterModel.quarter_code);
+                objParam.Add("@quarter_name", QuarterModel.quarter_name);
+                objParam.Add("@quarter_year", QuarterModel.quarter_year);
+                objParam.Add("@quarter_order", QuarterModel.quarter_order);
+                objParam.Add("@created_by", QuarterModel.created_by);
+
+
+                Connection();
+                mscon.Open();
+                List<QuarterModel> HrList = SqlMapper.Query<QuarterModel>(mscon, "SP_Hr_Quarter_Create", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Quarter_Update 
+        public List<QuarterModel> Hr_Quarter_Update(QuarterModel QuarterModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@quarter_id", QuarterModel.quarter_id);
+                objParam.Add("@quarter_year", QuarterModel.quarter_year);
+                objParam.Add("@quarter_status", QuarterModel.quarter_status);
+                objParam.Add("@updated_by", QuarterModel.updated_by);
+
+
+                Connection();
+                mscon.Open();
+                List<QuarterModel> HrList = SqlMapper.Query<QuarterModel>(mscon, "SP_Hr_Quarter_Update", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Create_Data
+        public List<CreateDATAModel> Hr_Create_Data(CreateDATAModel CreateDATAModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@data_id", CreateDATAModel.data_id);
+                objParam.Add("@data_leader_assess", CreateDATAModel.data_leader_assess);
+                objParam.Add("@data_employee_assess", CreateDATAModel.data_employee_assess);
+                objParam.Add("@data_form", CreateDATAModel.data_form);
+                objParam.Add("@data_quarter", CreateDATAModel.data_quarter);
+                objParam.Add("@data_assess_by", CreateDATAModel.data_assess_by);
+                objParam.Add("@data_score_pms", CreateDATAModel.data_score_pms);
+                objParam.Add("@data_percent_pms", CreateDATAModel.data_percent_pms);
+                objParam.Add("@record_status", CreateDATAModel.record_status);
+                objParam.Add("@created_by", CreateDATAModel.created_by);
+                //objParam.Add("@sc_topic", CreateDATAModel.sc_topic);
+                //objParam.Add("@sc_score", CreateDATAModel.sc_score);
+                //objParam.Add("@sc_comment", CreateDATAModel.sc_comment);
+                //objParam.Add("@sc_c_point", CreateDATAModel.sc_c_point);
+                //objParam.Add("@sc_c_improve", CreateDATAModel.sc_c_improve);
+
+                Connection();
+                mscon.Open();
+                List<CreateDATAModel> HrList = SqlMapper.Query<CreateDATAModel>(mscon, "SP_Hr_Create_Data", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Create_Score
+        public List<ScoreModel> Hr_Create_Score(ScoreModel ScoreModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@sc_data_id", ScoreModel.sc_data_id);
+                objParam.Add("@sc_answer_1", ScoreModel.sc_answer_1);
+                objParam.Add("@sc_answer_2_1", ScoreModel.sc_answer_2_1);
+                objParam.Add("@sc_answer_2_2", ScoreModel.sc_answer_2_2);
+                objParam.Add("@sc_answer_2_3", ScoreModel.sc_answer_2_3);
+                objParam.Add("@sc_answer_2_4", ScoreModel.sc_answer_2_4);
+                objParam.Add("@sc_answer_more", ScoreModel.sc_answer_more);
+                objParam.Add("@created_by", ScoreModel.created_by);
+
+                Connection();
+                mscon.Open();
+                List<ScoreModel> HrList = SqlMapper.Query<ScoreModel>(mscon, "SP_Hr_Create_Score", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Employee_Create
+        public List<EmployeeModel> Hr_Employee_Create(EmployeeModel EmployeeModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@user_id", EmployeeModel.user_id);
+                objParam.Add("@employee_code", EmployeeModel.employee_code);
+                objParam.Add("@employee_prefix", EmployeeModel.employee_prefix);
+                objParam.Add("@employee_name", EmployeeModel.employee_name);
+                objParam.Add("@employee_nickname", EmployeeModel.employee_nickname);
+                objParam.Add("@employee_sec", EmployeeModel.employee_sec);
+                objParam.Add("@employee_dept", EmployeeModel.employee_dept);
+                objParam.Add("@employee_pos", EmployeeModel.employee_pos);
+                objParam.Add("@employee_job_startdate", EmployeeModel.employee_job_startdate);
+                objParam.Add("@employee_leader_asses1", EmployeeModel.employee_leader_asses1);
+                objParam.Add("@employee_leader_asses2", EmployeeModel.employee_leader_asses2);
+                objParam.Add("@employee_leader_asses3", EmployeeModel.employee_leader_asses3);
+                objParam.Add("@employee_form", EmployeeModel.employee_form);
+                objParam.Add("@created_by", EmployeeModel.created_by);
+
+
+                Connection();
+                mscon.Open();
+                List<EmployeeModel> HrList = SqlMapper.Query<EmployeeModel>(mscon, "SP_Hr_Employee_Create", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Employee_Get
+        public List<EmployeeModel> Hr_Employee_Get(EmployeeModel EmployeeModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@employee_id", EmployeeModel.employee_id);
+                objParam.Add("@employee_name", EmployeeModel.employee_name);
+                objParam.Add("@employee_form", EmployeeModel.employee_form);
+                objParam.Add("@employee_code", EmployeeModel.employee_code);
+                objParam.Add("@employee_sec", EmployeeModel.employee_sec);
+                objParam.Add("@employee_dept", EmployeeModel.employee_dept);
+                objParam.Add("@employee_pos", EmployeeModel.employee_pos);
+                objParam.Add("@employee_leader", EmployeeModel.employee_leader);
+
+                Connection();
+                mscon.Open();
+                List<EmployeeModel> HrList = SqlMapper.Query<EmployeeModel>(mscon, "SP_Hr_Employee_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Employee_Update
+        public List<EmployeeModel> Hr_Employee_Update(EmployeeModel EmployeeModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@employee_id", EmployeeModel.employee_id);
+                objParam.Add("@employee_code", EmployeeModel.employee_code);
+                objParam.Add("@employee_prefix", EmployeeModel.employee_prefix);
+                objParam.Add("@employee_name", EmployeeModel.employee_name);
+                objParam.Add("@employee_nickname", EmployeeModel.employee_nickname);
+                objParam.Add("@employee_sec", EmployeeModel.employee_sec);
+                objParam.Add("@employee_dept", EmployeeModel.employee_dept);
+                objParam.Add("@employee_pos", EmployeeModel.employee_pos);
+                objParam.Add("@employee_job_startdate", EmployeeModel.employee_job_startdate);
+                objParam.Add("@employee_leader_asses1", EmployeeModel.employee_leader_asses1);
+                objParam.Add("@employee_leader_asses2", EmployeeModel.employee_leader_asses2);
+                objParam.Add("@employee_leader_asses3", EmployeeModel.employee_leader_asses3);
+                objParam.Add("@employee_form", EmployeeModel.employee_form);
+                objParam.Add("@updated_by", EmployeeModel.updated_by);
+
+
+                Connection();
+                mscon.Open();
+                List<EmployeeModel> HrList = SqlMapper.Query<EmployeeModel>(mscon, "SP_Hr_Employee_Update", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Employee_Delete
+        public List<EmployeeModel> Hr_Employee_Delete(EmployeeModel EmployeeModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@employee_id", EmployeeModel.employee_id);
+                objParam.Add("@updated_by", EmployeeModel.updated_by);
+
+
+                Connection();
+                mscon.Open();
+                List<EmployeeModel> HrList = SqlMapper.Query<EmployeeModel>(mscon, "SP_Hr_Employee_Delete", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Job_Get
+        public List<JobModel> Hr_Job_Get(JobModel JobModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@job_type", JobModel.job_type);
+
+                Connection();
+                mscon.Open();
+                List<JobModel> HrList = SqlMapper.Query<JobModel>(mscon, "SP_Hr_Job", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Hr_Time_Get
+        public List<TimeModel> Hr_Time_Get(TimeModel TimeModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@employee_code", TimeModel.employee_code);
+                objParam.Add("@employee_sec", TimeModel.employee_sec);
+                objParam.Add("@employee_dept", TimeModel.employee_dept);
+                objParam.Add("@employee_pos", TimeModel.employee_pos);
+                objParam.Add("@time_data_quarter", TimeModel.time_data_quarter);
+
+                Connection();
+                mscon.Open();
+                List<TimeModel> HrList = SqlMapper.Query<TimeModel>(mscon, "SP_Hr_Time_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return HrList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        //#region Hr_Time_Create
+        //public List<TimeModel> Hr_Time_Create(TimeModel TimeModel)
+        //{
+        //    try
+        //    {
+
+        //        DynamicParameters objParam = new DynamicParameters();
+
+        //        objParam.Add("@time_employee_code", TimeModel.time_employee_code);
+        //        objParam.Add("@time_employee_name", TimeModel.time_employee_name);
+        //        objParam.Add("@time_employee_pos", TimeModel.time_employee_pos);
+        //        objParam.Add("@time_late_count", TimeModel.time_late_count);
+        //        objParam.Add("@time_late_time", TimeModel.time_late_time);
+        //        objParam.Add("@time_absent_count", TimeModel.time_absent_count);
+        //        objParam.Add("@time_absent_time", TimeModel.time_absent_time);
+        //        objParam.Add("@time_sick_leave", TimeModel.time_sick_leave);
+        //        objParam.Add("@time_personal_leave", TimeModel.time_personal_leave);
+        //        objParam.Add("@time_maternity_leave", TimeModel.time_maternity_leave);
+        //        objParam.Add("@time_ordination_leave", TimeModel.time_ordination_leave);
+        //        objParam.Add("@time_wage_leave", TimeModel.time_wage_leave);
+        //        objParam.Add("@time_funeral_wedding_leave", TimeModel.time_funeral_wedding_leave);
+        //        objParam.Add("@time_warning_leave", TimeModel.time_warning_leave);
+        //        objParam.Add("@time_probate_leave", TimeModel.time_probate_leave);
+        //        objParam.Add("@time_data_quarter", TimeModel.time_data_quarter);
+        //        ///objParam.Add("@time_score", TimeModel.time_score);
+        //        objParam.Add("@created_by", TimeModel.created_by);
+
+        //        Connection();
+        //        mscon.Open();
+        //        List<TimeModel> HrList = SqlMapper.Query<TimeModel>(mscon, "SP_Hr_Time_Create", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+        //        mscon.Close();
+        //        return HrList.ToList();
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
+        //#endregion
+
+        #region Hr_Time_Create
+
+        public void Hr_Time_Create(List<TimeModel> TimeModel)
+        {
+            try
+            {
+
+                foreach (var TIME_JOBData in TimeModel)
+                {
+                    DynamicParameters objParam = new DynamicParameters();
+
+                    objParam.Add("@time_employee_code", TIME_JOBData.time_employee_code);
+                    objParam.Add("@time_employee_name", TIME_JOBData.time_employee_name);
+                    objParam.Add("@time_employee_pos", TIME_JOBData.time_employee_pos);
+                    objParam.Add("@time_late_count", TIME_JOBData.time_late_count);
+                    objParam.Add("@time_late_time", TIME_JOBData.time_late_time);
+                    objParam.Add("@time_absent_count", TIME_JOBData.time_absent_count);
+                    objParam.Add("@time_absent_time", TIME_JOBData.time_absent_time);
+                    objParam.Add("@time_sick_leave", TIME_JOBData.time_sick_leave);
+                    objParam.Add("@time_personal_leave", TIME_JOBData.time_personal_leave);
+                    objParam.Add("@time_maternity_leave", TIME_JOBData.time_maternity_leave);
+                    objParam.Add("@time_ordination_leave", TIME_JOBData.time_ordination_leave);
+                    objParam.Add("@time_wage_leave", TIME_JOBData.time_wage_leave);
+                    objParam.Add("@time_funeral_wedding_leave", TIME_JOBData.time_funeral_wedding_leave);
+                    objParam.Add("@time_warning_leave", TIME_JOBData.time_warning_leave);
+                    objParam.Add("@time_probate_leave", TIME_JOBData.time_probate_leave);
+                    objParam.Add("@time_data_quarter", TIME_JOBData.time_data_quarter);
+                    ///objParam.Add("@time_score", TimeModel.time_score);
+                    objParam.Add("@created_by", TIME_JOBData.created_by);
+
+                    Connection();
+                    mscon.Open();
+                    mscon.Execute("SP_Hr_Time_Create", objParam, commandType: CommandType.StoredProcedure, commandTimeout: 210);
+                    mscon.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+
+    }
+}

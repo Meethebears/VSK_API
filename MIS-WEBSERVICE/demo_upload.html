@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<form>
+    <input type="file" id="myfile" name="myfile" class="form-control m-input" placeholder="" accept=".jpg, .jpeg, .png, .doc, .docx, .xls, .xlsx, .pdf, .ppt, .pptx">
+    <input id="btn-add-file" type="button" value="Upload" />
+</form>
+<script type="text/javascript">
+
+	$('#btn-add-file').off('click').on('click', function(evt) {
+	
+		var file_data = new FormData();
+        var file_info = $("#myfile").get(0).files;
+		
+		console.log(file_info)
+		
+		if (file_info.length > 0) {
+		
+			file_data.append("postedFile", file_info[0]);
+			$.ajax({
+				url: 'http://localhost:49706/WebService/UploadFile',
+				type: 'POST',
+				data: file_data,
+				contentType: false,
+				processData: false,
+				success: function(file_name) {
+							
+							
+				}
+			});
+		}
+	});
+	
+</script>
+
+</body>
+</html>

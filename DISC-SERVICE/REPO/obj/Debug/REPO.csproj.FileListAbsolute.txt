@@ -1,0 +1,773 @@
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\csc.exe
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\csc.exe.config
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\csc.rsp
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\csi.exe
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\csi.rsp
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\System.AppContext.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\vbc.exe
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\vbc.exe.config
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\vbc.rsp
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\VBCSCompiler.exe
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Antlr3.Runtime.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\BouncyCastle.Crypto.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Dapper.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Google.Protobuf.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\MySql.Data.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Newtonsoft.Json.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Renci.SshNet.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.Helpers.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.Mvc.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.Optimization.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.Razor.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.WebPages.Deployment.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.WebPages.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.WebPages.Razor.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\WebGrease.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Dapper.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Google.Protobuf.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\MySql.Data.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Renci.SshNet.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.Helpers.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.Mvc.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.Optimization.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.Razor.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.WebPages.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.WebPages.Deployment.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\System.Web.WebPages.Razor.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Newtonsoft.Json.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Antlr3.Runtime.pdb
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\REPO.dll.config
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\REPO.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\bin\REPO.pdb
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\obj\Debug\REPO.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-REPO\obj\Debug\REPO.pdb
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.dll.config
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.pdb
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.exe
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csi.exe
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Dapper.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\MySql.Data.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\WebGrease.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Dapper.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\MySql.Data.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.dll
+D:\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.pdb
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\REPO.dll.config
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\REPO.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\REPO.pdb
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\csc.exe
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\csi.exe
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Dapper.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\MySql.Data.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\WebGrease.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Dapper.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\MySql.Data.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\Projects\Web Application\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Web Application\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\Projects\Web Application\MIS-SERVICE\REPO\obj\Debug\REPO.dll
+D:\Projects\Web Application\MIS-SERVICE\REPO\obj\Debug\REPO.pdb
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.dll.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.pdb
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.exe
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csi.exe
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Dapper.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\MySql.Data.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\WebGrease.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Dapper.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\MySql.Data.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.pdb
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.dll.config
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\REPO.pdb
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.exe
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csi.exe
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Dapper.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\MySql.Data.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\WebGrease.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Dapper.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\MySql.Data.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.dll
+D:\Project\VSK-Projects\MIS-SERVICE\REPO\obj\Debug\REPO.pdb
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\REPO.dll.config
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\REPO.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\REPO.pdb
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\csc.exe
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\csi.exe
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Dapper.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\MySql.Data.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\WebGrease.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Dapper.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\MySql.Data.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\obj\Debug\REPO.dll
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\obj\Debug\REPO.pdb
+D:\MIS-PROJECTS\MIS-SERVICE\REPO\obj\Debug\REPO.csprojAssemblyReference.cache
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\REPO.dll.config
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\REPO.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\REPO.pdb
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csc.exe
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csi.exe
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Dapper.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\MySql.Data.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\WebGrease.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Dapper.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\MySql.Data.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.dll
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.pdb
+D:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.csprojAssemblyReference.cache
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\REPO.dll.config
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\REPO.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\REPO.pdb
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csc.exe
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csc.exe.config
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csc.rsp
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csi.exe
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\csi.rsp
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\vbc.exe
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\vbc.exe.config
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\vbc.rsp
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Antlr3.Runtime.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Dapper.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Google.Protobuf.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\MySql.Data.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Newtonsoft.Json.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Renci.SshNet.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Helpers.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Mvc.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Optimization.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Razor.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\WebGrease.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Dapper.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Google.Protobuf.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\MySql.Data.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Renci.SshNet.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Helpers.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Mvc.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Optimization.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.Razor.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Newtonsoft.Json.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.dll
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.pdb
+F:\MIS-PROJECTS\MRP-SERVICE\REPO\obj\Debug\REPO.csprojAssemblyReference.cache
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\REPO.dll.config
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\REPO.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\REPO.pdb
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.exe
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.exe.config
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.rsp
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csi.exe
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csi.rsp
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.exe
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.exe.config
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.rsp
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Antlr3.Runtime.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Dapper.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Google.Protobuf.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\MySql.Data.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Newtonsoft.Json.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Renci.SshNet.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Helpers.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Mvc.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Optimization.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Razor.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\WebGrease.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Dapper.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Google.Protobuf.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\MySql.Data.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Renci.SshNet.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Helpers.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Mvc.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Optimization.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Razor.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Newtonsoft.Json.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.dll
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.pdb
+F:\MIS-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csprojAssemblyReference.cache
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\REPO.dll.config
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\REPO.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\REPO.pdb
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.exe
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csi.exe
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Dapper.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\MySql.Data.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\WebGrease.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Dapper.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\MySql.Data.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.dll
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.pdb
+D:\PROJECT_ALL\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.AssemblyReference.cache
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\REPO.dll.config
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\REPO.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\REPO.pdb
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.exe
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csi.exe
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Dapper.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\MySql.Data.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\WebGrease.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Dapper.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\MySql.Data.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.dll
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.pdb
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\Dev_Project\Web Application\VSK-PROJECTS\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.AssemblyReference.cache
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\REPO.dll.config
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\REPO.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\REPO.pdb
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\csc.exe
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\csc.exe.config
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\csc.rsp
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\csi.exe
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\csi.rsp
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\System.AppContext.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\System.Collections.Immutable.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\System.Reflection.Metadata.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\vbc.exe
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\vbc.exe.config
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\vbc.rsp
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\roslyn\VBCSCompiler.exe.config
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Antlr3.Runtime.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\BouncyCastle.Crypto.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Dapper.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Google.Protobuf.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Microsoft.Web.Infrastructure.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\MySql.Data.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Newtonsoft.Json.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Renci.SshNet.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.Helpers.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.Mvc.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.Optimization.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.Razor.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.WebPages.Deployment.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.WebPages.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.WebPages.Razor.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\WebGrease.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Dapper.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Google.Protobuf.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\MySql.Data.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Renci.SshNet.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.Helpers.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.Mvc.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.Optimization.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.Razor.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.WebPages.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.WebPages.Deployment.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\System.Web.WebPages.Razor.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Newtonsoft.Json.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Antlr3.Runtime.pdb
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.AssemblyReference.cache
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.CoreCompileInputs.cache
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\obj\Debug\REPO.csproj.CopyComplete
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\obj\Debug\REPO.dll
+D:\Dev_Project\Web Application\VSK-API\DISC-SERVICE\REPO\obj\Debug\REPO.pdb

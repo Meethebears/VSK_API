@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace REPO.Models
+{
+    public partial class campaign_modal
+    {
+        //start 1 รายละเอียด //
+        public string id { get; set; }
+        public string campaign_start_datetime { get; set; }
+        public string campaign_end_datetime { get; set; }
+        public string campaign_name { get; set; }
+        public int campaign_type { get; set; }
+        public decimal campaign_discount { get; set; }
+        public decimal campaign_percent { get; set; }
+        public decimal campaign_minprice { get; set; }
+        public decimal campaign_maxdiscount { get; set; }
+        public int campaign_qty { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public int record_status { get; set; }
+        public string mode { get; set; }
+        public int check_dup_start { get; set; }
+        public int check_dup_end { get; set; }
+        public string pMessage { get; set; }
+        public string redeem_used { get; set; }
+        public string campaign_balance { get; set; }
+        public string campaign_code { get; set; }
+        
+    }
+
+    public partial class redeem_modal
+    {
+        public string id { get; set; }
+        public string campaign_id { get; set; }
+        public string redeem_code { get; set; }
+        public string campaign_code { get; set; }
+        public string campaign_name { get; set; }
+        public string userid { get; set; }
+        public string number { get; set; }
+        public string invname { get; set; }
+        public string invcode { get; set; }
+        public string invsumtt { get; set; }
+        public DateTime redeem_start_date { get; set; }
+        public DateTime redeem_end_date { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_datetime { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public int record_status { get; set; }
+        public string pMessage { get; set; }
+        public string mode { get; set; }
+    }
+}

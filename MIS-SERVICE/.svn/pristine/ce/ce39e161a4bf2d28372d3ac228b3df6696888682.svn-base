@@ -1,0 +1,79 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace REPO.Models
+{
+    public partial class DashboardModel
+    {
+        //start 1 รายละเอียด //
+        public string pk_date { get; set; }
+        public string dashboard_id { get; set; }
+        public string pk_type { get; set; }
+        public string std_name { get; set; }
+        /*
+        public string pk_date { get; set; }
+        public string pk_type { get; set; }
+        */
+        public string WH { get; set; }
+        public string on_time { get; set; }
+        public int sku_count_onprocess { get; set; }
+        public int sku_count_checked { get; set; }
+        public int bill_count_onprocess { get; set; }
+        public int bill_count_checked { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public string record_status { get; set; }
+        public DateTime last_updated_time { get; set; }
+        public int sku_total { get; set; }
+        public int bill_total { get; set; }
+        public int sku_count_pka { get; set; }
+        public int bill_count_pka { get; set; }
+        public int sku_count_pkb { get; set; }
+        public int bill_count_pkb { get; set; }
+    }
+
+    public partial class InvoiceModel
+    {
+        //start 1 รายละเอียด //
+        public string invoice_id { get; set; }
+        public string invoice_name { get; set; }
+        public DateTime invoice_date { get; set; }
+        public string invoice_on_time { get; set; }
+        public string invoice_order_type { get; set; }
+        public int invoice_count { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public string record_status { get; set; }
+        public DateTime last_updated_time { get; set; }
+        public string pk_date { get; set; }
+        public string inv_total_date { get; set; }
+        public DateTime inv_total_last_time { get; set; }
+        public string inv_total_name { get; set; }
+        public int inv_total_count { get; set; }
+        public int inv_total_on_process { get; set; }
+        public int inv_total_complete { get; set; }
+        
+
+    }
+
+    public partial class TMS_JOBModel
+    {
+        public DateTime tms_job_date { get; set; }
+        public string tms_job_route { get; set; }
+        public string tms_job_plate { get; set; }
+        public string tms_job_name { get; set; }
+        public string tms_job_no { get; set; }
+        public string tms_job_cus_name { get; set; }
+        public DateTime tms_job_created_date { get; set; }
+        public DateTime tms_job_delivery_date { get; set; }
+
+    }
+
+}

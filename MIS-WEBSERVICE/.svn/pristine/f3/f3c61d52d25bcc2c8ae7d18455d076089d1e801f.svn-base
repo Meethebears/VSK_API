@@ -1,0 +1,821 @@
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\csc.exe
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\csc.exe.config
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\csc.rsp
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\csi.exe
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\csi.rsp
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\System.AppContext.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\System.Collections.Immutable.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\System.IO.FileSystem.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\System.Reflection.Metadata.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\vbc.exe
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\vbc.exe.config
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\vbc.rsp
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\VBCSCompiler.exe
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\roslyn\VBCSCompiler.exe.config
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Antlr3.Runtime.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\DocumentFormat.OpenXml.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\EPPlus.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\IronBarCode.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\KeepAutomation.Barcode.Web.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Microsoft.Web.Infrastructure.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Newtonsoft.Json.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Swashbuckle.Core.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Net.Http.Formatting.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Cors.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Helpers.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Http.Cors.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Http.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Http.WebHost.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Mvc.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Optimization.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Razor.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.WebPages.Deployment.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.WebPages.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.WebPages.Razor.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\WebActivatorEx.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\WebGrease.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Dapper.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\DocumentFormat.OpenXml.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\EPPlus.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\IronBarCode.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Http.Cors.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Newtonsoft.Json.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Net.Http.Formatting.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Helpers.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Http.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Http.WebHost.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Mvc.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Optimization.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.Razor.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.WebPages.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.WebPages.Deployment.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\System.Web.WebPages.Razor.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Antlr3.Runtime.pdb
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\Dapper.xml
+D:\VSK-Projects\MIS-SERVICE\VSK-API\obj\Debug\API.csprojAssemblyReference.cache
+D:\VSK-Projects\MIS-SERVICE\VSK-API\obj\Debug\API.csproj.CopyComplete
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\API.dll.config
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\API.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\API.pdb
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\REPO.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\REPO.pdb
+D:\VSK-Projects\MIS-SERVICE\VSK-API\bin\REPO.dll.config
+D:\VSK-Projects\MIS-SERVICE\VSK-API\obj\Debug\API.dll
+D:\VSK-Projects\MIS-SERVICE\VSK-API\obj\Debug\API.pdb
+D:\VSK-Projects\MIS-SERVICE\API\bin\API.dll.config
+D:\VSK-Projects\MIS-SERVICE\API\bin\API.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\API.pdb
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.exe
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.exe.config
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.rsp
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csi.exe
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csi.rsp
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.AppContext.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Collections.Immutable.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Reflection.Metadata.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.exe
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.exe.config
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.rsp
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe
+D:\VSK-Projects\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe.config
+D:\VSK-Projects\MIS-SERVICE\API\bin\Antlr3.Runtime.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\EPPlus.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\IronBarCode.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\KeepAutomation.Barcode.Web.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.Web.Infrastructure.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\Newtonsoft.Json.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\Swashbuckle.Core.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Net.Http.Formatting.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Cors.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Helpers.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.Cors.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.WebHost.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Mvc.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Optimization.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Razor.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\WebActivatorEx.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\WebGrease.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\EPPlus.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\IronBarCode.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.Cors.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\Newtonsoft.Json.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Net.Http.Formatting.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Helpers.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.WebHost.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Mvc.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Optimization.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Razor.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\Antlr3.Runtime.pdb
+D:\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.csproj.CopyComplete
+D:\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.dll
+D:\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.pdb
+D:\VSK-Projects\MIS-SERVICE\API\bin\REPO.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\MySql.Data.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\Dapper.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\Google.Protobuf.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\BouncyCastle.Crypto.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\Renci.SshNet.dll
+D:\VSK-Projects\MIS-SERVICE\API\bin\REPO.pdb
+D:\VSK-Projects\MIS-SERVICE\API\bin\REPO.dll.config
+D:\VSK-Projects\MIS-SERVICE\API\bin\MySql.Data.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\Dapper.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\Google.Protobuf.xml
+D:\VSK-Projects\MIS-SERVICE\API\bin\Renci.SshNet.xml
+D:\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.csprojAssemblyReference.cache
+D:\Projects\Web Application\MIS-SERVICE\API\bin\API.dll.config
+D:\Projects\Web Application\MIS-SERVICE\API\bin\API.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\API.pdb
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\csc.exe
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\csc.exe.config
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\csc.rsp
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\csi.exe
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\csi.rsp
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\System.AppContext.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\vbc.exe
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\vbc.exe.config
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\vbc.rsp
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Web Application\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Antlr3.Runtime.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\EPPlus.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\IronBarCode.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\KeepAutomation.Barcode.Web.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Newtonsoft.Json.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\REPO.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Swashbuckle.Core.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Net.Http.Formatting.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Cors.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Helpers.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Http.Cors.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Http.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Http.WebHost.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Mvc.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Optimization.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Razor.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.WebPages.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\WebActivatorEx.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\WebGrease.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\MySql.Data.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Dapper.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Google.Protobuf.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\BouncyCastle.Crypto.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Renci.SshNet.dll
+D:\Projects\Web Application\MIS-SERVICE\API\bin\REPO.pdb
+D:\Projects\Web Application\MIS-SERVICE\API\bin\REPO.dll.config
+D:\Projects\Web Application\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\EPPlus.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\IronBarCode.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Http.Cors.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Newtonsoft.Json.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Net.Http.Formatting.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Helpers.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Http.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Http.WebHost.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Mvc.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Optimization.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.Razor.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.WebPages.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Antlr3.Runtime.pdb
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\MySql.Data.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Dapper.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Google.Protobuf.xml
+D:\Projects\Web Application\MIS-SERVICE\API\bin\Renci.SshNet.xml
+D:\Projects\Web Application\MIS-SERVICE\API\obj\Debug\API.csprojAssemblyReference.cache
+D:\Projects\Web Application\MIS-SERVICE\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\MIS-SERVICE\API\obj\Debug\API.csproj.CopyComplete
+D:\Projects\Web Application\MIS-SERVICE\API\obj\Debug\API.dll
+D:\Projects\Web Application\MIS-SERVICE\API\obj\Debug\API.pdb
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\API.dll.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\API.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\API.pdb
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.exe
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.exe.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.rsp
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csi.exe
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csi.rsp
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.AppContext.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.exe
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.exe.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.rsp
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Antlr3.Runtime.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\EPPlus.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\IronBarCode.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\KeepAutomation.Barcode.Web.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Newtonsoft.Json.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\REPO.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Swashbuckle.Core.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Net.Http.Formatting.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Cors.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Helpers.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.Cors.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.WebHost.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Mvc.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Optimization.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Razor.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\WebActivatorEx.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\WebGrease.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\MySql.Data.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Dapper.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Google.Protobuf.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\BouncyCastle.Crypto.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Renci.SshNet.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\REPO.pdb
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\REPO.dll.config
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\EPPlus.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\IronBarCode.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.Cors.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Newtonsoft.Json.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Net.Http.Formatting.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Helpers.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.WebHost.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Mvc.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Optimization.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Razor.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Antlr3.Runtime.pdb
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\MySql.Data.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Dapper.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Google.Protobuf.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\bin\Renci.SshNet.xml
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.csprojAssemblyReference.cache
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.csproj.CopyComplete
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.dll
+D:\Projects\Web Application\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.pdb
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\API.dll.config
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\API.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\API.pdb
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.exe
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.exe.config
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csc.rsp
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csi.exe
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\csi.rsp
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.AppContext.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.exe
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.exe.config
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\vbc.rsp
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Antlr3.Runtime.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\EPPlus.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\IronBarCode.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\KeepAutomation.Barcode.Web.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Newtonsoft.Json.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\REPO.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Swashbuckle.Core.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Net.Http.Formatting.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Cors.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Helpers.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.Cors.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.WebHost.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Mvc.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Optimization.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Razor.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\WebActivatorEx.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\WebGrease.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\MySql.Data.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Dapper.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Google.Protobuf.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\BouncyCastle.Crypto.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Renci.SshNet.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\REPO.pdb
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\REPO.dll.config
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\EPPlus.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\IronBarCode.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.Cors.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Newtonsoft.Json.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Net.Http.Formatting.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Helpers.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Http.WebHost.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Mvc.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Optimization.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.Razor.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Antlr3.Runtime.pdb
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\MySql.Data.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Dapper.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Google.Protobuf.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\bin\Renci.SshNet.xml
+D:\Project\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.csprojAssemblyReference.cache
+D:\Project\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+D:\Project\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.csproj.CopyComplete
+D:\Project\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.dll
+D:\Project\VSK-Projects\MIS-SERVICE\API\obj\Debug\API.pdb
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\API.dll.config
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\API.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\API.pdb
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\csc.exe
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\csc.exe.config
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\csc.rsp
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\csi.exe
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\csi.rsp
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\System.AppContext.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\System.Collections.Immutable.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\System.Reflection.Metadata.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\vbc.exe
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\vbc.exe.config
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\vbc.rsp
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\roslyn\VBCSCompiler.exe.config
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Antlr3.Runtime.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\EPPlus.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\IronBarCode.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\KeepAutomation.Barcode.Web.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Microsoft.Web.Infrastructure.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Newtonsoft.Json.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\REPO.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Swashbuckle.Core.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Net.Http.Formatting.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Cors.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Helpers.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Http.Cors.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Http.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Http.WebHost.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Mvc.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Optimization.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Razor.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.WebPages.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\WebActivatorEx.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\WebGrease.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\MySql.Data.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Dapper.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Google.Protobuf.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\BouncyCastle.Crypto.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Renci.SshNet.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\REPO.pdb
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\REPO.dll.config
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\DocumentFormat.OpenXml.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\EPPlus.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\IronBarCode.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Http.Cors.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Newtonsoft.Json.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Net.Http.Formatting.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Helpers.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Http.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Http.WebHost.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Mvc.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Optimization.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.Razor.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.WebPages.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.WebPages.Deployment.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\System.Web.WebPages.Razor.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Antlr3.Runtime.pdb
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\MySql.Data.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Dapper.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Google.Protobuf.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\bin\Renci.SshNet.xml
+D:\MIS-PROJECTS\MIS-SERVICE\API\obj\Debug\API.csprojAssemblyReference.cache
+D:\MIS-PROJECTS\MIS-SERVICE\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+D:\MIS-PROJECTS\MIS-SERVICE\API\obj\Debug\API.csproj.CopyComplete
+D:\MIS-PROJECTS\MIS-SERVICE\API\obj\Debug\API.dll
+D:\MIS-PROJECTS\MIS-SERVICE\API\obj\Debug\API.pdb
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\API.dll.config
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\API.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\API.pdb
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csc.exe
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csc.exe.config
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csc.rsp
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csi.exe
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csi.rsp
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.AppContext.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.Collections.Immutable.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.IO.FileSystem.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.Reflection.Metadata.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\vbc.exe
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\vbc.exe.config
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\vbc.rsp
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\VBCSCompiler.exe
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\VBCSCompiler.exe.config
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Antlr3.Runtime.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\DocumentFormat.OpenXml.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\EPPlus.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\IronBarCode.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\KeepAutomation.Barcode.Web.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Microsoft.Web.Infrastructure.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Newtonsoft.Json.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\REPO.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Swashbuckle.Core.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Net.Http.Formatting.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Cors.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Helpers.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.Cors.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.WebHost.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Mvc.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Optimization.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Razor.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.Deployment.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.Razor.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\WebActivatorEx.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\WebGrease.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Dapper.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\REPO.pdb
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\REPO.dll.config
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\DocumentFormat.OpenXml.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\EPPlus.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\IronBarCode.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.Cors.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Newtonsoft.Json.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Net.Http.Formatting.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Helpers.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.WebHost.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Mvc.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Optimization.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Razor.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.Deployment.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.Razor.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Antlr3.Runtime.pdb
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\bin\Dapper.xml
+D:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.csprojAssemblyReference.cache
+D:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+D:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.csproj.CopyComplete
+D:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.dll
+D:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.pdb
+F:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.csprojAssemblyReference.cache
+F:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\API.dll.config
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\API.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\API.pdb
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csc.exe
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csc.exe.config
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csc.rsp
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csi.exe
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\csi.rsp
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.AppContext.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.Collections.Immutable.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.IO.FileSystem.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\System.Reflection.Metadata.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\vbc.exe
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\vbc.exe.config
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\vbc.rsp
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\VBCSCompiler.exe
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\roslyn\VBCSCompiler.exe.config
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Antlr3.Runtime.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\DocumentFormat.OpenXml.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\EPPlus.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\IronBarCode.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\KeepAutomation.Barcode.Web.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Microsoft.Web.Infrastructure.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Newtonsoft.Json.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\REPO.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Swashbuckle.Core.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Net.Http.Formatting.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Cors.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Helpers.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.Cors.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.WebHost.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Mvc.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Optimization.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Razor.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.Deployment.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.Razor.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\WebActivatorEx.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\WebGrease.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Dapper.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\REPO.pdb
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\REPO.dll.config
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\DocumentFormat.OpenXml.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\EPPlus.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\IronBarCode.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.Cors.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Newtonsoft.Json.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Net.Http.Formatting.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Helpers.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Http.WebHost.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Mvc.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Optimization.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.Razor.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.Deployment.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\System.Web.WebPages.Razor.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Antlr3.Runtime.pdb
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\bin\Dapper.xml
+F:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.csproj.CopyComplete
+F:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.dll
+F:\MIS-PROJECTS\MRP-SERVICE\API\obj\Debug\API.pdb
+F:\MIS-PROJECTS\MIS-API\API\bin\API.dll.config
+F:\MIS-PROJECTS\MIS-API\API\bin\API.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\API.pdb
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\csc.exe
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\csc.exe.config
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\csc.rsp
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\csi.exe
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\csi.rsp
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\System.AppContext.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\System.Collections.Immutable.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\System.IO.FileSystem.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\System.Reflection.Metadata.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\vbc.exe
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\vbc.exe.config
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\vbc.rsp
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\VBCSCompiler.exe
+F:\MIS-PROJECTS\MIS-API\API\bin\roslyn\VBCSCompiler.exe.config
+F:\MIS-PROJECTS\MIS-API\API\bin\Antlr3.Runtime.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\DocumentFormat.OpenXml.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\EPPlus.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\IronBarCode.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\KeepAutomation.Barcode.Web.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\Microsoft.Web.Infrastructure.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\Newtonsoft.Json.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\REPO.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\Swashbuckle.Core.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Net.Http.Formatting.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Cors.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Helpers.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Http.Cors.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Http.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Http.WebHost.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Mvc.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Optimization.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Razor.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.WebPages.Deployment.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.WebPages.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.WebPages.Razor.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\WebActivatorEx.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\WebGrease.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\Dapper.dll
+F:\MIS-PROJECTS\MIS-API\API\bin\REPO.pdb
+F:\MIS-PROJECTS\MIS-API\API\bin\REPO.dll.config
+F:\MIS-PROJECTS\MIS-API\API\bin\DocumentFormat.OpenXml.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\EPPlus.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\IronBarCode.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Http.Cors.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\Newtonsoft.Json.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Net.Http.Formatting.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Helpers.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Http.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Http.WebHost.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Mvc.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Optimization.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.Razor.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.WebPages.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.WebPages.Deployment.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\System.Web.WebPages.Razor.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\Antlr3.Runtime.pdb
+F:\MIS-PROJECTS\MIS-API\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MIS-PROJECTS\MIS-API\API\bin\Dapper.xml
+F:\MIS-PROJECTS\MIS-API\API\obj\Debug\API.csproj.AssemblyReference.cache
+F:\MIS-PROJECTS\MIS-API\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+F:\MIS-PROJECTS\MIS-API\API\obj\Debug\API.csproj.CopyComplete
+F:\MIS-PROJECTS\MIS-API\API\obj\Debug\API.dll
+F:\MIS-PROJECTS\MIS-API\API\obj\Debug\API.pdb
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\API.dll.config
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\API.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\API.pdb
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\csc.exe
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\csc.exe.config
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\csc.rsp
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\csi.exe
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\csi.rsp
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\System.AppContext.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\System.Collections.Immutable.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\System.IO.FileSystem.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\System.Reflection.Metadata.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\vbc.exe
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\vbc.exe.config
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\vbc.rsp
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\VBCSCompiler.exe
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\roslyn\VBCSCompiler.exe.config
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\Antlr3.Runtime.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\DocumentFormat.OpenXml.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\EPPlus.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\IronBarCode.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\KeepAutomation.Barcode.Web.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\Microsoft.Web.Infrastructure.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\Newtonsoft.Json.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\REPO.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\Swashbuckle.Core.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Net.Http.Formatting.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Cors.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Helpers.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Http.Cors.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Http.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Http.WebHost.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Mvc.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Optimization.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Razor.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.WebPages.Deployment.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.WebPages.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.WebPages.Razor.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\WebActivatorEx.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\WebGrease.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\REPO.pdb
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\REPO.dll.config
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\DocumentFormat.OpenXml.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\EPPlus.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\IronBarCode.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Http.Cors.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\Newtonsoft.Json.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Net.Http.Formatting.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Helpers.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Http.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Http.WebHost.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Mvc.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Optimization.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.Razor.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.WebPages.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.WebPages.Deployment.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\System.Web.WebPages.Razor.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\Antlr3.Runtime.pdb
+F:\MIS-PROJECTS\MIS-UPLOADS\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MIS-PROJECTS\MIS-UPLOADS\API\obj\Debug\API.csproj.AssemblyReference.cache
+F:\MIS-PROJECTS\MIS-UPLOADS\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+F:\MIS-PROJECTS\MIS-UPLOADS\API\obj\Debug\API.csproj.CopyComplete
+F:\MIS-PROJECTS\MIS-UPLOADS\API\obj\Debug\API.dll
+F:\MIS-PROJECTS\MIS-UPLOADS\API\obj\Debug\API.pdb

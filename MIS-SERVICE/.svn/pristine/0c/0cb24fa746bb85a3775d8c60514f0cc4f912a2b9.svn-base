@@ -1,0 +1,203 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+using Dapper;
+using MySql.Data.MySqlClient;
+using REPO.Models;
+
+namespace REPO.Controllers
+{
+    public class DashboardRepository
+    {
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+ 
+        public SqlConnection mscon;
+
+        private void Connection()
+        {
+           
+            string msconstr = ConfigurationManager.ConnectionStrings["MIS_SERVICE"].ToString();
+            mscon = new SqlConnection(msconstr);
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+
+
+        #region Dashboard_Create
+        public List<DashboardModel> Dashboard_Create(DashboardModel DashboardModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                
+                objParam.Add("@pk_date", DashboardModel.pk_date);
+                objParam.Add("@last_updated_time", DashboardModel.last_updated_time);
+
+                Connection();
+                mscon.Open();
+                List<DashboardModel> DBList = SqlMapper.Query<DashboardModel>(mscon, "SP_INV_Dashboard_Onprocess_EXCE", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return DBList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Dashboard_Total
+        public List<DashboardModel> Dashboard_Total(DashboardModel DashboardModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+
+                objParam.Add("@pk_date", DashboardModel.pk_date);
+
+                Connection();
+                mscon.Open();
+                List<DashboardModel> DBList = SqlMapper.Query<DashboardModel>(mscon, "SP_INV_Dashboard_Onprocess_Total", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return DBList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Dashboard_Get
+        public List<DashboardModel> Dashboard_Get(DashboardModel DashboardModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@pk_date", DashboardModel.pk_date);
+                objParam.Add("@last_updated_time", DashboardModel.last_updated_time);
+                objParam.Add("@std_name", DashboardModel.std_name);
+                objParam.Add("@on_time", DashboardModel.on_time);
+                objParam.Add("@pk_type", DashboardModel.pk_type);
+                objParam.Add("@WH", DashboardModel.WH);
+
+                Connection();
+                mscon.Open();
+                List<DashboardModel> DBList = SqlMapper.Query<DashboardModel>(mscon, "SP_INV_Dashboard_Onprocess_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return DBList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Dashboard_Invoice_Create
+        public List<InvoiceModel> Dashboard_Invoice_Create(InvoiceModel InvoiceModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+
+                objParam.Add("@pk_date", InvoiceModel.pk_date);
+                objParam.Add("@last_updated_time", InvoiceModel.last_updated_time);
+
+                Connection();
+                mscon.Open();
+                List<InvoiceModel> DBList = SqlMapper.Query<InvoiceModel>(mscon, "SP_INV_Dashboard_Onprocess_Invoice_EXCE", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return DBList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Dashboard_Invoice_Get
+        public List<InvoiceModel> Dashboard_Invoice_Get(InvoiceModel InvoiceModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@pk_date", InvoiceModel.pk_date);
+                objParam.Add("@last_updated_time", InvoiceModel.last_updated_time);
+                objParam.Add("@invoice_on_time", InvoiceModel.invoice_on_time);
+                objParam.Add("@invoice_name", InvoiceModel.invoice_name);
+                objParam.Add("@invoice_order_type", InvoiceModel.invoice_order_type);
+
+
+                Connection();
+                mscon.Open();
+                List<InvoiceModel> DBList = SqlMapper.Query<InvoiceModel>(mscon, "SP_INV_Dashboard_Invoice_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return DBList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Dashboard_Invoice_Total
+        public List<InvoiceModel> Dashboard_Invoice_Total(InvoiceModel InvoiceModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@pk_date", InvoiceModel.pk_date);
+                objParam.Add("@last_updated_time", InvoiceModel.last_updated_time);
+                objParam.Add("@inv_total_name", InvoiceModel.inv_total_name);
+  
+
+
+                Connection();
+                mscon.Open();
+                List<InvoiceModel> DBList = SqlMapper.Query<InvoiceModel>(mscon, "SP_INV_Dashboard_Invoice_Total_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return DBList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+    }
+}

@@ -1,0 +1,346 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace REPO.Models
+{
+    public partial class DetailModel
+    {
+        //start 1 รายละเอียด //
+        public string employee_id { get; set; }
+        public string employee_code { get; set; }
+        public string employee_prefix { get; set; }
+        public string employee_name { get; set; }
+        public string employee_nickname { get; set; }
+        public string employee_sec { get; set; }
+        public string employee_dept { get; set; }
+        public string employee_pos { get; set; }
+        public DateTime employee_job_startdate { get; set; }
+        public string employee_leader_asses1 { get; set; }
+        public string employee_leader_asses2 { get; set; }
+        public string employee_leader_asses3 { get; set; }
+        public string employee_form { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public string record_status { get; set; }
+
+        public string data_quarter { get; set; }
+        public string quarter_id { get; set; }
+        public string quarter_name { get; set; }
+        public string time_id { get; set; }
+        public string time_employee_code { get; set; }
+        public string time_employee_name { get; set; }
+        public string time_employee_pos { get; set; }
+        public string time_late_count { get; set; }
+        public string time_late_time { get; set; }
+        public string time_absent_count { get; set; }
+        public string time_absent_time { get; set; }
+        public string time_sick_leave { get; set; }
+        public string time_personal_leave { get; set; }
+        public string time_maternity_leave { get; set; }
+        public string time_ordination_leave { get; set; }
+        public string time_wage_leave { get; set; }
+        public string time_funeral_wedding_leave { get; set; }
+        public string time_warning_leave { get; set; }
+        public string time_probate_leave { get; set; }
+        public string time_data_quarter { get; set; }
+        public string time_score { get; set; }
+        public string updated_status { get; set; }
+
+    }
+
+    public partial class QuarterModel
+    {
+        //start 1 รายละเอียด //
+        public string employee_code { get; set; }
+        public string quarter_id { get; set; }
+        public string quarter_year { get; set; }
+        public string quarter_name { get; set; }
+        public string quarter_status { get; set; }
+        public string created_by { get; set; }
+        public string created_date { get; set; }
+        public string updated_by { get; set; }
+        public string updated_date { get; set; }
+        public string record_status { get; set; }
+        public string quarter_value { get; set; }
+        public string quarter_order { get; set; }
+        public string quarter_code { get; set; }
+
+    }
+
+    public partial class CreateDATAModel
+    {
+        //start 1 รายละเอียด //
+        public string data_id { get; set; }
+        public string data_leader_assess { get; set; }
+        public string data_employee_assess { get; set; }
+        public int data_form { get; set; }
+        public string data_quarter { get; set; }
+        public int data_assess_by { get; set; }
+        public string data_score_pms { get; set; }
+        public string data_percent_pms { get; set; }
+        public string record_status { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public string updated_status { get; set; }
+        public string updated_command { get; set; }
+        public string data_c_good { get; set; }
+        public string data_c_fail { get; set; }
+
+    }
+
+    public partial class EmployeeModel
+    {
+        //start 1 รายละเอียด //
+        public string employee_id { get; set; }
+        public string user_id { get; set; }
+        public string employee_code { get; set; }
+        public string employee_prefix { get; set; }
+        public string employee_name { get; set; }
+        public string employee_nickname { get; set; }
+        public string employee_sec { get; set; }
+        public string employee_dept { get; set; }
+        public string employee_pos { get; set; }
+        public string employee_sec_id { get; set; }
+        public string employee_dept_id { get; set; }
+        public string employee_pos_id { get; set; }
+        public DateTime employee_job_startdate { get; set; }
+        public string employee_leader { get; set; }
+        public string employee_leader_asses1 { get; set; }
+        public string employee_leader_asses2 { get; set; }
+        public string employee_leader_asses3 { get; set; }
+        public string employee_form { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public int record_status { get; set; }
+
+    }
+
+    public partial class JobModel
+    {
+        //start 1 รายละเอียด //
+        public string job_id { get; set; }
+        public string job_name { get; set; }
+        public string job_type { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public int record_status { get; set; }
+
+    }
+
+    public partial class TimeModel
+    {
+        public string time_id { get; set; }
+        public string time_employee_code { get; set; }
+        public string time_employee_name { get; set; }
+        public string time_employee_pos { get; set; }
+        public string time_late_count { get; set; }
+        public string time_late_time { get; set; }
+        public string time_absent_count { get; set; }
+        public string time_absent_time { get; set; }
+        public string time_sick_leave { get; set; }
+        public string time_personal_leave { get; set; }
+        public string time_maternity_leave { get; set; }
+        public string time_ordination_leave { get; set; }
+        public string time_wage_leave { get; set; }
+        public string time_funeral_wedding_leave { get; set; }
+        public string time_warning_leave { get; set; }
+        public string time_probate_leave { get; set; }
+        public string time_data_quarter { get; set; }
+        public string time_score { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public int record_status { get; set; }
+        public string employee_name { get; set; }
+        public string employee_code { get; set; }
+        public string employee_sec { get; set; }
+        public string employee_dept { get; set; }
+        public string employee_pos{ get; set; }
+
+    }
+
+    public partial class ScoreCreateModel
+    {
+        //start 1 รายละเอียด //
+        public string sc_id { get; set; }
+        public string sc_data_id { get; set; }
+        public string sc_topic { get; set; }
+        public string sc_weight { get; set; }
+        public int sc_score { get; set; }
+        public string sc_comment { get; set; }
+        public int sc_order { get; set; }
+        public int record_status { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+
+    }
+
+    public partial class ScoreModel
+    {
+        //start 1 รายละเอียด //
+        public string sc_id { get; set; }
+        public string sc_data_id { get; set; }
+        public string sc_answer_1 { get; set; }
+        public string sc_answer_2_1 { get; set; }
+        public string sc_answer_2_2 { get; set; }
+        public string sc_answer_2_3 { get; set; }
+        public string sc_answer_2_4 { get; set; }
+        public string sc_answer_more { get; set; }
+        public int record_status { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        
+    }
+
+    public partial class Score_Answer_1_Model
+    {
+        //start 1 รายละเอียด //
+        public string sc_answer_1 { get; set; }
+        public string topic_1_1_1 { get; set; }
+        public string weight_1_1_1 { get; set; }
+        public int score_1_1_1 { get; set; }
+        public string comment_1_1_1 { get; set; }
+        public string topic_1_1_2 { get; set; }
+        public string weight_1_1_2 { get; set; }
+        public int score_1_1_2 { get; set; }
+        public string comment_1_1_2 { get; set; }
+        public string topic_1_1_3 { get; set; }
+        public string weight_1_1_3 { get; set; }
+        public int score_1_1_3 { get; set; }
+        public string comment_1_1_3 { get; set; }
+
+    }
+
+    public partial class Score_Answer_2_1_Model
+    {
+        public string sc_answer_2_1 { get; set; }
+        public string topic_1_2_1_1 { get; set; }
+        public string weight_1_2_1_1 { get; set; }
+        public int score_1_2_1_1 { get; set; }
+        public string comment_1_2_1_1 { get; set; }
+        public string topic_1_2_1_2 { get; set; }
+        public string weight_1_2_1_2 { get; set; }
+        public int score_1_2_1_2 { get; set; }
+        public string comment_1_2_1_2 { get; set; }
+        public string topic_1_2_1_3 { get; set; }
+        public string weight_1_2_1_3 { get; set; }
+        public int score_1_2_1_3 { get; set; }
+        public string comment_1_2_1_3 { get; set; }
+        public string topic_1_2_1_4 { get; set; }
+        public string weight_1_2_1_4 { get; set; }
+        public int score_1_2_1_4 { get; set; }
+        public string comment_1_2_1_4 { get; set; }
+
+    }
+
+    public partial class Score_Answer_2_2_Model
+    {
+        public string sc_answer_2_2 { get; set; }
+        public string topic_1_2_2_1 { get; set; }
+        public string weight_1_2_2_1 { get; set; }
+        public int score_1_2_1_2 { get; set; }
+        public string comment_1_2_2_1 { get; set; }
+        public string topic_1_2_2_2 { get; set; }
+        public string weight_1_2_2_2 { get; set; }
+        public int score_1_2_2_2 { get; set; }
+        public string comment_1_2_2_2 { get; set; }
+        public string topic_1_2_2_3 { get; set; }
+        public string weight_1_2_2_3 { get; set; }
+        public int score_1_2_2_3 { get; set; }
+        public string comment_1_2_2_3 { get; set; }
+        public string topic_1_2_2_4 { get; set; }
+        public string weight_1_2_2_4 { get; set; }
+        public int score_1_2_2_4 { get; set; }
+        public string comment_1_2_2_4 { get; set; }
+
+    }
+
+    public partial class Score_Answer_2_3_Model
+    {
+        public string sc_answer_2_3 { get; set; }
+        public string topic_1_2_3_1 { get; set; }
+        public string weight_1_2_3_1 { get; set; }
+        public int score_1_2_1_3 { get; set; }
+        public string comment_1_2_3_1 { get; set; }
+        public string topic_1_2_3_2 { get; set; }
+        public string weight_1_2_3_2 { get; set; }
+        public int score_1_2_3_2 { get; set; }
+        public string comment_1_2_3_2 { get; set; }
+        public string topic_1_2_3_3 { get; set; }
+        public string weight_1_2_3_3 { get; set; }
+        public int score_1_2_3_3 { get; set; }
+        public string comment_1_2_3_3 { get; set; }
+        public string topic_1_2_3_4 { get; set; }
+        public string weight_1_2_3_4 { get; set; }
+        public int score_1_2_3_4 { get; set; }
+        public string comment_1_2_3_4 { get; set; }
+
+    }
+
+    public partial class Score_Answer_2_4_Model
+    {
+        public string sc_answer_2_4 { get; set; }
+        public string topic_1_2_4_1 { get; set; }
+        public string weight_1_2_4_1 { get; set; }
+        public int score_1_2_1_4 { get; set; }
+        public string comment_1_2_4_1 { get; set; }
+        public string topic_1_2_4_2 { get; set; }
+        public string weight_1_2_4_2 { get; set; }
+        public int score_1_2_4_2 { get; set; }
+        public string comment_1_2_4_2 { get; set; }
+        public string topic_1_2_4_3 { get; set; }
+        public string weight_1_2_4_3 { get; set; }
+        public int score_1_2_4_3 { get; set; }
+        public string comment_1_2_4_3 { get; set; }
+        public string topic_1_2_4_4 { get; set; }
+        public string weight_1_2_4_4 { get; set; }
+        public int score_1_2_4_4 { get; set; }
+        public string comment_1_2_4_4 { get; set; }
+        public string topic_1_2_4_5 { get; set; }
+        public string weight_1_2_4_5 { get; set; }
+        public int score_1_2_4_5 { get; set; }
+        public string comment_1_2_4_5 { get; set; }
+        public string topic_1_2_4_6 { get; set; }
+        public string weight_1_2_4_6 { get; set; }
+        public int score_1_2_4_6 { get; set; }
+        public string comment_1_2_4_6 { get; set; }
+
+    }
+
+    public partial class Score_Answer_More_Model
+    {
+        public string sc_answer_more { get; set; }
+        public string topic_more_1 { get; set; }
+        public int score_more_1 { get; set; }
+        public string comment_more_1 { get; set; }
+        public string topic_more_2 { get; set; }
+        public int score_more_2 { get; set; }
+        public string comment_more_2 { get; set; }
+        public string topic_more_3 { get; set; }
+        public int score_more_3 { get; set; }
+        public string comment_more_3 { get; set; }
+        public string topic_more_4 { get; set; }
+        public int score_more_4 { get; set; }
+        public string comment_more_4 { get; set; }
+        public string topic_more_5 { get; set; }
+        public int score_more_5 { get; set; }
+        public string comment_more_5 { get; set; }
+
+    }
+}

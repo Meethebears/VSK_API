@@ -1,0 +1,251 @@
+﻿using REPO.Models;
+using REPO.Controllers;
+using System.Web.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Globalization;
+
+namespace API.Controllers
+{
+    public class MasterController : ApiController
+    {
+        #region Mas_gcode_get
+        [Route("api/Mas_gcode_get")]
+        [HttpGet]
+        public ResponseModel Mas_gcode_get([FromUri] MasterModel MasterModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MasterRepository MasterRepository = new MasterRepository();
+
+                List<MasterModel> Mas_gcode_get = MasterRepository.Mas_gcode_get(MasterModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Mas_gcode_get;
+                _ResponseModel.length = Mas_gcode_get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Mas_gcode_action
+        [Route("api/Mas_gcode_action")]
+        [HttpPost]
+        public ResponseModel Mas_gcode_action([FromBody] MasterModel MasterModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MasterRepository MasterRepository = new MasterRepository();
+
+                List<MasterModel> Mas_gcode_action = MasterRepository.Mas_gcode_action(MasterModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Mas_gcode_action;
+                _ResponseModel.length = Mas_gcode_action.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Mas_gcode_chk
+        [Route("api/Mas_gcode_chk")]
+        [HttpGet]
+        public ResponseModel Mas_gcode_chk([FromUri] MasterModel MasterModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MasterRepository MasterRepository = new MasterRepository();
+
+                List<MasterModel> Mas_gcode_chk = MasterRepository.Mas_gcode_chk(MasterModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Mas_gcode_chk;
+                _ResponseModel.length = Mas_gcode_chk.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Master_stmas_exp_get
+        [Route("api/Master_stmas_exp_get")]
+        [HttpGet]
+        public ResponseModel Master_stmas_exp_get([FromUri] Stmas_ExpModel Stmas_ExpModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MasterRepository MasterRepository = new MasterRepository();
+
+                List<Stmas_ExpModel> Master_stmas_exp_get = MasterRepository.Master_stmas_exp_get(Stmas_ExpModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Master_stmas_exp_get;
+                _ResponseModel.length = Master_stmas_exp_get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Master_stmas_get
+        [Route("api/Master_stmas_get")]
+        [HttpGet]
+        public ResponseModel Master_stmas_get([FromUri] Stmas_v1Model Stmas_v1Model)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MasterRepository MasterRepository = new MasterRepository();
+
+                List<Stmas_v1Model> Master_stmas_get = MasterRepository.Master_stmas_get(Stmas_v1Model);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Master_stmas_get;
+                _ResponseModel.length = Master_stmas_get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region ItemMaster_Search
+        [Route("api/ItemMaster_Search")]
+        [HttpGet]
+        public ResponseModel MRP_ItemMaster_Search_v2([FromUri] string id, string text, string keywords)
+        {
+            try
+            {
+
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MasterRepository MasterRepository = new MasterRepository();
+
+                List<Item_masterModel> ItemMaster_Search = MasterRepository.ItemMaster_Search(id, text, keywords);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = ItemMaster_Search;
+                _ResponseModel.length = ItemMaster_Search.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+    }
+}

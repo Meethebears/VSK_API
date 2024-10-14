@@ -1,0 +1,203 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+using Dapper;
+using MySql.Data.MySqlClient;
+using REPO.Models;
+
+namespace REPO.Controllers
+{
+    public class MasterRepository
+    {
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+
+        public SqlConnection mscon;
+
+        private void Connection()
+        {
+
+            string msconstr = ConfigurationManager.ConnectionStrings["VSK_Data"].ToString();
+            mscon = new SqlConnection(msconstr);
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+
+
+        #region Mas_gcode_get
+        public List<MasterModel> Mas_gcode_get(MasterModel MasterModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@code", MasterModel.code);
+                objParam.Add("@gname", MasterModel.gname);
+                objParam.Add("@codechr", MasterModel.codechr);
+                objParam.Add("@ctype", MasterModel.ctype);
+
+                Connection();
+                mscon.Open();
+                List<MasterModel> MasList = SqlMapper.Query<MasterModel>(mscon, "SP_Gcode_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return MasList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Mas_gcode_action
+        public List<MasterModel> Mas_gcode_action(MasterModel MasterModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+                objParam.Add("@code", MasterModel.code);
+                objParam.Add("@gname", MasterModel.gname);
+                objParam.Add("@codechr", MasterModel.codechr);
+                objParam.Add("@ctype", MasterModel.ctype);
+                objParam.Add("@userid", MasterModel.userid);
+                //objParam.Add("@rec", MasterModel.rec);
+                objParam.Add("@function_type", MasterModel.function_type);
+
+
+                Connection();
+                mscon.Open();
+                List<MasterModel> MasList = SqlMapper.Query<MasterModel>(mscon, "SP_Gcode_Action", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return MasList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Mas_gcode_chk
+        public List<MasterModel> Mas_gcode_chk(MasterModel MasterModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@code", MasterModel.code);
+                objParam.Add("@gname", MasterModel.gname);
+                objParam.Add("@codechr", MasterModel.codechr);
+                objParam.Add("@ctype", MasterModel.ctype);
+
+                Connection();
+                mscon.Open();
+                List<MasterModel> MasList = SqlMapper.Query<MasterModel>(mscon, "SP_Gcode_Chk", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return MasList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Master_stmas_exp_get
+        public List<Stmas_ExpModel> Master_stmas_exp_get(Stmas_ExpModel Stmas_ExpModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@code", Stmas_ExpModel.code);
+                objParam.Add("@name", Stmas_ExpModel.name);
+                objParam.Add("@part_number", Stmas_ExpModel.part_number);
+                objParam.Add("@gbarcode", Stmas_ExpModel.gbarcode);
+                objParam.Add("@Mode", Stmas_ExpModel.Mode);
+
+                Connection();
+                mscon.Open();
+                List<Stmas_ExpModel> MasList = SqlMapper.Query<Stmas_ExpModel>(mscon, "SP_Stmas_Exp_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return MasList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Master_stmas_get
+        public List<Stmas_v1Model> Master_stmas_get(Stmas_v1Model Stmas_v1Model)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@code", Stmas_v1Model.code);
+                objParam.Add("@name", Stmas_v1Model.name);
+                objParam.Add("@part_number", Stmas_v1Model.part_number);
+                objParam.Add("@gbarcode", Stmas_v1Model.gbarcode);
+                objParam.Add("@action_type", Stmas_v1Model.action_type);
+
+                Connection();
+                mscon.Open();
+                List<Stmas_v1Model> MasList = SqlMapper.Query<Stmas_v1Model>(mscon, "SP_Stmas_Select2_Get", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return MasList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region ItemMaster_Search
+        public List<Item_masterModel> ItemMaster_Search(string id, string text, string keywords)
+        {
+            try
+            {
+
+                string SQLQuery = "SELECT TOP 10 " + id + " AS id, " + text + " as text FROM stmas WHERE '" + keywords + "' != '' AND  (RTRIM(gbarcode) LIKE '%" + keywords + "%' OR RTRIM(name) LIKE '%" + keywords + "%' OR RTRIM(code) LIKE '%" + keywords + "%' OR RTRIM(SPCODES) LIKE '%" + keywords + "%' OR RTRIM(CHRCODE) LIKE '%" + keywords + "%')";
+
+                Connection();
+                mscon.Open();
+                List<Item_masterModel> MasList = mscon.Query<Item_masterModel>(SQLQuery).ToList();
+                mscon.Close();
+                return MasList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        #endregion
+
+    }
+}

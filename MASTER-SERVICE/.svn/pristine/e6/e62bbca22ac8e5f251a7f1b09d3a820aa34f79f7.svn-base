@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace REPO.Models
+{
+
+    public partial class InvDBModelGet
+    {
+        //start 1 รายละเอียด //
+
+        //public string stkcod { get; set; }
+        //public string coderef { get; set; }
+        //public string stkunit { get; set; }
+        //public string empcod { get; set; }
+        //public string trnflag { get; set; }
+        //public string trntype { get; set; }
+        //public string trnprnet { get; set; }
+        //public string trnamo { get; set; }
+        //public string amo { get; set; }
+        //public string trncost { get; set; }
+        //public string disone { get; set; }
+        //public string distwo { get; set; }
+        //public string disthree { get; set; }
+        //public string biclosed { get; set; }
+        //public string trnbill { get; set; }
+        //public string gtamount { get; set; }
+        //public string gtonhand { get; set; }
+        //public string trnkind { get; set; }
+        //public string recnum { get; set; }
+        //public string rdeleted { get; set; }
+        //public string resvrec { get; set; }
+        //public string RESERV { get; set; }
+        //public string greserv { get; set; }
+        //public string purcost { get; set; }
+        //public string fgtype { get; set; }
+        //public string bookd { get; set; }
+        //public string lotonhand { get; set; }
+        //public string lotgtamo { get; set; }
+        //public string invnumber { get; set; }
+        //public string pbranch { get; set; }
+        //public string tdeleted { get; set; }
+        //public string remark { get; set; }
+        //public string taxnumb { get; set; }
+        //public string gbarcode { get; set; }
+        //public string carregis { get; set; }
+        //public string earnestno { get; set; }
+        //public string qtysmall { get; set; }
+        //public string totqtysmall { get; set; }
+        //public string glocat { get; set; }
+        //public string spcodes { get; set; }
+        //public string trnumber { get; set; }
+        //public string trqty { get; set; }
+        //public string chkqty { get; set; }
+        //public string chkqtycust { get; set; }
+        //public string gfree { get; set; }
+        //public string chknon { get; set; }
+        //public string cremark { get; set; }
+        //public string deltime { get; set; }
+        //public string usrdel { get; set; }
+        //public string glocatd { get; set; }
+        //public string gvatfree { get; set; }
+        //public string estatus { get; set; }
+        //public string ipaddress { get; set; }
+        //public string whdiscode { get; set; }
+        //public string fvat { get; set; }
+        //public string gvat { get; set; }
+        //public string rsnumber { get; set; }
+        //public string qtyedit { get; set; }
+        //public string saleqty { get; set; }
+
+        public string invno { get; set; }
+        public string chkuserid { get; set; }
+        public string pickeruser { get; set; }
+        public string stkzone { get; set; }
+        public string batchno { get; set; }
+        public string userid { get; set; }
+        public string item { get; set; }
+        public string trnqty { get; set; }
+        public string trnprice { get; set; }
+        public DateTime startdate { get; set; }
+        public DateTime chktime { get; set; }
+        public DateTime trndate { get; set; }
+        public string empname { get; set; }
+        public string stktype { get; set; }
+        public string number { get; set; }
+        public string invbook { get; set; }
+        public string stkname { get; set; }
+        public string mode { get; set; }
+
+    }
+
+}

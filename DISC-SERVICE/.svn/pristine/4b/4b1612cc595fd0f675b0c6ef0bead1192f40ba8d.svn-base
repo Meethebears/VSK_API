@@ -1,0 +1,826 @@
+﻿using Dapper;
+using REPO.Models;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web.Mvc;
+
+namespace REPO.Controllers
+{
+    public class DiscountRepository : Controller
+    {
+
+        //private string session_id;
+        private string ref_id;
+        private string code;
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+        public SqlConnection VSK_Data;
+        public SqlConnection Vorwins;
+        public SqlConnection Vskmis;
+
+
+        private void Connection()
+        {
+            VSK_Data = new SqlConnection(ConfigurationManager.ConnectionStrings["VSK_Data"].ToString());
+            Vorwins = new SqlConnection(ConfigurationManager.ConnectionStrings["Vorwins"].ToString());
+            Vskmis = new SqlConnection(ConfigurationManager.ConnectionStrings["Vskmis"].ToString());
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+        public List<ResponseSelect2Model> prnetfile_select2_search(string id, string text, string keywords)
+        {
+            try
+            {
+                string SQLQuery = "SELECT TOP 5 " + id + " AS id, " + text + " as text , rtrim(lname) AS lname FROM prnetfile WHERE RTRIM(code) LIKE '" + keywords + "%' OR RTRIM(lname) LIKE '" + keywords + "%' OR RTRIM(remark) LIKE '" + keywords + "%'";
+                Connection();
+                Vskmis.Open();
+                List<ResponseSelect2Model> RequestModelList = Vskmis.Query<ResponseSelect2Model>(SQLQuery).ToList();
+                Vskmis.Close();
+                return RequestModelList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public List<ResponseSelect2Model> gdishead_select2_search(string id, string text, string keywords)
+        {
+            try
+            {
+                string SQLQuery = "SELECT TOP 5 " + id + " AS id, " + text + " as text FROM gdishead WHERE RTRIM(code) LIKE '" + keywords + "%' OR RTRIM(lname) LIKE '" + keywords + "%' OR RTRIM(remark) LIKE '" + keywords + "%'";
+                Connection();
+                Vorwins.Open();
+                List<ResponseSelect2Model> RequestModelList = Vorwins.Query<ResponseSelect2Model>(SQLQuery).ToList();
+                Vorwins.Close();
+                return RequestModelList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public List<Dis_pre_prnettraModel> Dis_pre_prnettra_List(Dis_pre_prnettraModel Dis_pre_prnettraModel)
+        {
+            try
+            {
+                string SQLQuery = "SELECT prnettra.*, " +
+                                  "stmas.AvgSalecost as stmas_AvgSalecost, " +
+                                  " ( SELECT TOP 1 RTRIM(ref_id) FROM prnettra_import_log pril WHERE prnettra.gcode = pril.gcode AND event_status = 'SUCCESS' AND record_status = '1'  ) AS ref_id " +
+                                  "FROM prnettra INNER JOIN vorswin.dbo.stmas ON stmas.code = prnettra.gcode " +
+                                  "WHERE ecode = '" + Dis_pre_prnettraModel.ecode + "' " +
+                                  "ORDER BY prnettra.startdate DESC";
+                Connection();
+                Vskmis.Open();
+                List<Dis_pre_prnettraModel> Dis_pre_prnettraList = Vskmis.Query<Dis_pre_prnettraModel>(SQLQuery).ToList();
+                Vskmis.Close();
+                return Dis_pre_prnettraList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Dis_pre_emmaspModel> Dis_emmas_List(string code, string mode) //mode netprice or egdis
+        {
+            try
+            {
+                string SQLQuery;
+
+                if (mode == "netprice")
+                {
+                    SQLQuery = "SELECT " +
+                               "    RTRIM(code) AS emmas_code, " +
+                               "    RTRIM(lname) AS emmas_lname, " +
+                               "    RTRIM(eaddress) AS emmas_address, " +
+                               "    RTRIM(etumbol) AS emmas_tumbol, " +
+                               "    RTRIM(eamphur) AS emmas_eamphur, " +
+                               "    RTRIM(eprovinc) AS emmas_eprovinc, " +
+                               "    RTRIM(ezip) AS emmas_zip, " +
+                               "    RTRIM(netprice) AS emmas_netprice, " +
+                               "    RTRIM(egdis) AS emmas_egdis " +
+                               "FROM emmas WHERE netprice = '" + code + "' ORDER BY code ASC";
+                }
+                else if (mode == "egdis")
+                {
+                    SQLQuery = "SELECT " +
+                               "    RTRIM(code) AS emmas_code, " +
+                               "    RTRIM(lname) AS emmas_lname, " +
+                               "    RTRIM(eaddress) AS emmas_address, " +
+                               "    RTRIM(etumbol) AS emmas_tumbol, " +
+                               "    RTRIM(eamphur) AS emmas_eamphur, " +
+                               "    RTRIM(eprovinc) AS emmas_eprovinc, " +
+                               "    RTRIM(ezip) AS emmas_zip, " +
+                               "    RTRIM(netprice) AS emmas_netprice, " +
+                               "    RTRIM(egdis) AS emmas_egdis " +
+                               "FROM emmas WHERE egdis = '" + code + "' ORDER BY code ASC";
+                }
+                else
+                {
+                    SQLQuery = "SELECT 'ERROR' as event_status";
+                }
+
+                Connection();
+                Vorwins.Open();
+                List<Dis_pre_emmaspModel> Dis_pre_emmaspList = Vorwins.Query<Dis_pre_emmaspModel>(SQLQuery).ToList();
+                Vorwins.Close();
+                return Dis_pre_emmaspList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Dis_prnetfileModel> Dis_prnetfile_List(string mode)
+        {
+            try
+            {
+                string SQLQuery;
+
+                if (mode == "list")
+                {
+                    SQLQuery = "SELECT " +
+                               "    RTRIM(code) AS prnetfile_code, " +
+                               "    RTRIM(lname) AS prnetfile_lname, " +
+                               "    RTRIM(remark) AS prnetfile_remark, " +
+                               "    RTRIM(procdate) AS prnetfile_procdate, " +
+                               "    RTRIM(procby) AS prnetfile_procby, " +
+                               "    RTRIM(userid) AS prnetfile_userid, " +
+                               "    RTRIM(named) AS prnetfile_named, " +
+                               "    RTRIM(TYPE) AS prnetfile_TYPE, " +
+                               "    RTRIM(carbrand) AS prnetfile_carbrand, " +
+                               "    RTRIM(chrcode) AS prnetfile_chrcode, " +
+                               "    RTRIM(gmodel) AS prnetfile_gmodel, " +
+                               "    RTRIM(typeb) AS prnetfile_typeb, " +
+                               " ( SELECT TOP 1 RTRIM(ref_id) FROM prnetfile_import_log pil WHERE prnetfile.code = pil.code AND event_status = 'SUCCESS' AND record_status = '1'  ) AS ref_id " +
+                               " FROM prnetfile ORDER BY procdate DESC";
+                }
+                else
+                {
+                    SQLQuery = "SELECT 'ERROR' as event_status";
+                }
+
+                Connection();
+                Vskmis.Open();
+                List<Dis_prnetfileModel> Dis_prnetfileList = Vskmis.Query<Dis_prnetfileModel>(SQLQuery).ToList();
+                Vskmis.Close();
+                return Dis_prnetfileList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void Dis_prnetfile_Action(Dis_prnetfile_action_Model Dis_prnetfileModel)
+        {
+            try
+            {
+                Connection();
+
+                Vskmis.Open();
+
+                string SQLQuery;
+
+                SQLQuery = "INSERT INTO prnetfile_import_log(" +
+                             " trans_id, " +
+                             " code, " +
+                             " lname," +
+                             " remark," +
+                             " procdate," +
+                             " procby," +
+                             " userid," +
+                             " named," +
+                             " TYPE," +
+                             " carbrand," +
+                             " chrcode," +
+                             " gmodel," +
+                             " typeb," +
+                             " created_by," +
+                             " created_date," +
+                             " record_status," +
+                             " event_name," +
+                             " event_status," +
+                             " ref_id" +
+                           ") VALUES (" +
+                             " NEWID(), " +
+                             " RTRIM('" + Dis_prnetfileModel.code + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.lname + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.remark + "'), " +
+                             " GETDATE(), " +
+                             " RTRIM('" + Dis_prnetfileModel.procby + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.created_by + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.named + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.TYPE + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.carbrand + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.chrcode + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.gmodel + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.typeb + "'), " +
+                             " RTRIM('" + Dis_prnetfileModel.created_by + "'), " +
+                             " GETDATE(), " +
+                             " RTRIM('1'), " +
+                             " '" + Dis_prnetfileModel.mode + "', " +
+                             " RTRIM('PENDING'), " +
+                             " '" + Dis_prnetfileModel.ref_id + "' " +
+                             " ) ";
+
+                Vskmis.Query<Dis_prnetfile_action_Model>(SQLQuery).ToList();
+
+                if (Dis_prnetfileModel.mode == "CREATE")
+                {
+                   
+                        SQLQuery = "INSERT INTO prnetfile(" +
+                                    " code, " +
+                                    " lname," +
+                                    " remark," +
+                                    " procdate," +
+                                    " procby," +
+                                    " userid," +
+                                    " named," +
+                                    " TYPE," +
+                                    " carbrand," +
+                                    " chrcode," +
+                                    " gmodel," +
+                                    " typeb" +
+                                    ")(SELECT " +
+                                    " code, " +
+                                    " lname," +
+                                    " remark," +
+                                    " procdate," +
+                                    " procby," +
+                                    " userid," +
+                                    " named," +
+                                    " TYPE," +
+                                    " carbrand," +
+                                    " chrcode," +
+                                    " gmodel," +
+                                    " typeb " +
+                                    " FROM prnetfile_import_log " +
+                                    " WHERE ref_id = '" + Dis_prnetfileModel.ref_id + "' " +
+                                    " AND event_name = '" + Dis_prnetfileModel.mode + "' " +
+                                    " AND event_status = 'PENDING' " +
+                                    " AND record_status = '1' " +
+                                    ")";
+                }
+
+                else if (Dis_prnetfileModel.mode == "UPDATE")
+                {
+                    SQLQuery = "UPDATE prnetfile" +
+                               " SET " +
+                               " prnetfile.lname = pil.lname , " +
+                               " prnetfile.remark = pil.remark , " +
+                               " prnetfile.procdate = pil.procdate , " +
+                               " prnetfile.procby = pil.procby , " +
+                               " prnetfile.userid = pil.userid , " +
+                               " prnetfile.named = pil.named , " +
+                               " prnetfile.TYPE = pil.TYPE , " +
+                               " prnetfile.carbrand = pil.carbrand , " +
+                               " prnetfile.chrcode = pil.chrcode , " +
+                               " prnetfile.gmodel = pil.gmodel , " +
+                               " prnetfile.typeb = pil.typeb  " +
+                               " FROM prnetfile" +
+                               " INNER JOIN prnetfile_import_log pil ON prnetfile.code = pil.code" +
+                               " WHERE pil.ref_id = '" + Dis_prnetfileModel.ref_id + "' " +
+                               " AND prnetfile.code = '" + Dis_prnetfileModel.code + "' " +
+                               " AND pil.event_name = '" + Dis_prnetfileModel.mode + "'" +
+                               " AND pil.event_status = 'PENDING' " +
+                               " AND pil.record_status = '1' " ;
+                }
+
+                else if (Dis_prnetfileModel.mode == "DELETE")
+                {
+                    SQLQuery = "DELETE pr " +
+                               "FROM prnetfile pr " +
+                               "INNER JOIN prnetfile_import_log pil ON pr.code = pil.code" +
+                               " WHERE pil.ref_id = '" + Dis_prnetfileModel.ref_id + "' " +
+                               " AND pr.code = '" + Dis_prnetfileModel.code + "' " +
+                               " AND pil.event_name = '" + Dis_prnetfileModel.mode + "' " +
+                               " AND pil.event_status = 'PENDING' " +
+                               " AND pil.record_status = '1' ";
+                }
+
+                else
+                {
+                    SQLQuery = "SELECT 'ERROR' as event_status";
+                }
+
+                Vskmis.Query<Dis_prnetfile_action_Model>(SQLQuery);
+
+                SQLQuery = "UPDATE prnetfile_import_log" +
+                           " SET event_status = 'SUCCESS', " +
+                           " updated_by = '" + Dis_prnetfileModel.created_by + "', " +
+                           " updated_date = GETDATE() " +
+                           " FROM prnetfile_import_log " +
+                           " WHERE ref_id = '" + Dis_prnetfileModel.ref_id + "' " +
+                           " AND code =  '" + Dis_prnetfileModel.code + "' " +
+                           " AND event_name =  '" + Dis_prnetfileModel.mode + "' ";
+
+                Vskmis.Query<Dis_prnetfile_action_Model>(SQLQuery);
+
+                Vskmis.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Dis_prnetfile_check_Model> Dis_prnetfile_Check (string code)
+        {
+            try
+            {
+                string SQLQuery;
+
+                
+                    SQLQuery = "SELECT TOP 1 code FROM prnetfile WHERE code = '" + code + "' ";
+              
+
+                Connection();
+                Vskmis.Open();
+                List<Dis_prnetfile_check_Model> Dis_prnetfile_Check = Vskmis.Query<Dis_prnetfile_check_Model>(SQLQuery).ToList();
+                Vskmis.Close();
+                return Dis_prnetfile_Check.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<ResponseStmasSelect2Model> stmas_select2_search(string id, string text, string keywords)
+        {
+            try
+            {
+                string SQLQuery = "SELECT TOP 10 " + id + " AS id, " + text + " as text, AvgSalecost, UOM , name FROM stmas WHERE '" + keywords + "' != '' AND  (RTRIM(gbarcode) LIKE '%" + keywords + "%' OR RTRIM(name) LIKE '%" + keywords + "%' OR RTRIM(code) LIKE '%" + keywords + "%' OR RTRIM(SPCODES) LIKE '%" + keywords + "%')";
+                Connection();
+                Vorwins.Open();
+                List<ResponseStmasSelect2Model> RequestModelList = Vorwins.Query<ResponseStmasSelect2Model>(SQLQuery).ToList();
+                Vorwins.Close();
+                return RequestModelList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public List<Dis_pre_prnettraModel> prnettra_import_verify(List<Dis_pre_prnettraModel> Dis_pre_prnettraModel)
+        {
+            try
+            {
+                string SQLQuery;
+
+
+                Connection();
+                Vskmis.Open();
+
+                foreach (var Dis_pre_prnettraData in Dis_pre_prnettraModel)
+                {
+                    ref_id = Dis_pre_prnettraData.ref_id;
+                    code = Dis_pre_prnettraData.gcode;
+
+                    SQLQuery = "INSERT INTO prnettra_import_log (" +
+                                        "trans_id," +
+                                        "gcode," +
+                                        "gname," +
+                                        "Qty_A," +
+                                        "Qty_B," +
+                                        "NetPrice," +
+                                        "gunit," +
+                                        "userid," +
+                                        "startdate," +
+                                        "ecode," +
+                                        "session_id," +
+                                        "created_by," +
+                                        "created_date," +
+                                        "record_status," +
+                                        "event_name," +
+                                        "event_status," +
+                                        "ref_id" +
+                                        ")VALUES(" +
+                                        "NEWID()," +
+                                        "'" + Dis_pre_prnettraData.gcode + "'," +
+                                        "'" + Dis_pre_prnettraData.gname + "'," +
+                                        "'" + Dis_pre_prnettraData.Qty_A + "'," +
+                                        "'" + Dis_pre_prnettraData.Qty_B + "'," +
+                                        "'" + Dis_pre_prnettraData.NetPrice + "'," +
+                                        "'" + Dis_pre_prnettraData.gunit + "'," +
+                                        "'" + Dis_pre_prnettraData.userid + "'," +
+                                        "GETDATE()," +
+                                        "'" + Dis_pre_prnettraData.ecode + "'," +
+                                        "'" + Dis_pre_prnettraData.ref_id + "'," +
+                                        "'" + Dis_pre_prnettraData.userid + "'," +
+                                        "GETDATE()," +
+                                        "'1'," +
+                                        "'IMPORT'," +
+                                        "'PENDING'," +
+                                        "'" + Dis_pre_prnettraData.ref_id + "'" +
+                                        ")";
+
+                    Vskmis.Query(SQLQuery).ToList();
+
+                }
+
+                SQLQuery = "UPDATE prnettra_import_log" +
+                              " SET " +
+                              " prnettra_import_log.record_status = CASE WHEN ( SELECT COUNT(*) FROM vskmis.dbo.prnettra_import_log pril1 WHERE pril1.gcode = pril.gcode ) > 1 THEN '2' " +
+                                                                       " WHEN ( SELECT COUNT(*) FROM vorswin.dbo.stmas stmas WHERE stmas.code = pril.gcode ) = '0' THEN '3' " +
+                                                                       " WHEN ( SELECT COUNT(*) FROM vskmis.dbo.prnettra pr WHERE pril.gcode = pr.gcode AND pril.ecode = pr.ecode ) >= '1' THEN '4' " +
+                                                                       " WHEN pril.NetPrice < (SELECT COUNT(stmas.AvgSalecost) FROM vorswin.dbo.stmas stmas WHERE stmas.code = pril.gcode ) THEN '5' " +
+                                                                  " ELSE '1' END " +
+                              " FROM prnettra_import_log pril" +
+                              " WHERE pril.ref_id = '" + ref_id + "' " +
+                              //" AND pril.gcode = '" + code + "' " +
+                              " AND pril.event_status = 'PENDING' ";
+
+                Vskmis.Query<Dis_pre_prnettraModel>(SQLQuery);
+
+                //SQLQuery = "SELECT prnettra_import_log.gcode," +
+                //              "rtrim(prnettra_import_log.gcode) as gcode," +
+                //              "CASE WHEN rtrim(prnettra_import_log.gcode) = rtrim(stmas.code) THEN '' ELSE 'รหัสสินค้าไม่ถูกต้อง, ' END as chk_gcode," +
+                //              "rtrim(stmas.gbarcode) as gbarcode," +
+                //              "rtrim(gname) as gname," +
+                //              "CASE WHEN rtrim(gname) = rtrim(stmas.name) THEN '' ELSE 'ชือสินค้าไม่ถูกต้อง, ' END as chk_gname," +
+                //              "rtrim(stmas.SPCODES) as gpartno," +
+                //              "Qty_A," +
+                //              "Qty_B," +
+                //              "NetPrice," +
+                //              "rtrim(gunit) as gunit," +
+                //              "CASE WHEN rtrim(gunit) = rtrim(stmas.uom) THEN '' ELSE 'หน่วยสินค้าไม่ถูกต้อง ' END AS chk_gunit," +
+                //              //"stmas.avgcost as avgcost," +
+                //              "stmas.AvgSalecost as avgcost," +
+                //              "ref_id," +
+                //              "ISNULL((SELECT TOP 1 CONCAT('ข้อมูลซ้ำ สร้างโดย ', prnettra.userid ,' วัน/เวลา ',prnettra.startdate ) FROM prnettra WHERE prnettra.gcode = prnettra_import_log.gcode AND prnettra.ecode = prnettra_import_log.ecode),'') AS chk_duplicate" +
+                //          " FROM prnettra_import_log " +
+                //          "LEFT JOIN vorswin.dbo.stmas stmas ON stmas.code = prnettra_import_log.gcode " +
+                //          "WHERE ref_id = '" + ref_id + "' ORDER BY chk_duplicate DESC,chk_gcode DESC,chk_gname DESC, chk_gunit DESC";
+
+                SQLQuery = "SELECT " +
+                                "prnettra_import_log.gcode," +
+                                "rtrim(stmas.gbarcode) as gbarcode," +
+                                "rtrim(stmas.name) as gname," +
+                                "rtrim(stmas.UOM) as gunit," +
+                                "rtrim(stmas.SPCODES) as gpartno," +
+                                "Qty_A," +
+                                "Qty_B," +
+                                "NetPrice," +
+                                "rtrim(gunit) as gunit," +
+                                "stmas.AvgSalecost as avgcost," +
+                                "ref_id," +
+                                "record_status," +
+                                "CASE WHEN record_status = '1' THEN 'OK' " +
+                                "WHEN record_status = '2' THEN 'ข้อมูลซ้ำในเอกสาร' " +
+                                "WHEN record_status = '3' THEN 'ไม่พบรายการสินค้า' " +
+                                "WHEN record_status = '4' THEN 'ข้อมูลซ้ำในระบบ' " +
+                                "WHEN record_status = '5' THEN 'Net_Price ต่ำกว่าเกณฑ์' " +
+                                "ELSE 'ERROR' END AS 'text_status' , " +
+                                "ISNULL((SELECT TOP 1 CONCAT('ข้อมูลซ้ำ สร้างโดย ', prnettra.userid ,' วัน/เวลา ',prnettra.startdate ) FROM prnettra WHERE prnettra.gcode = prnettra_import_log.gcode AND prnettra.ecode = prnettra_import_log.ecode),'') AS chk_duplicate" +
+                            " FROM prnettra_import_log " +
+                            "LEFT JOIN vorswin.dbo.stmas stmas ON stmas.code = prnettra_import_log.gcode " +
+                            "WHERE ref_id = '" + ref_id + "' ";
+                            //"ORDER BY chk_duplicate DESC,chk_gcode DESC,chk_gname DESC, chk_gunit DESC";
+
+                List<Dis_pre_prnettraModel> Dis_pre_prnettraList = Vskmis.Query<Dis_pre_prnettraModel>(SQLQuery).ToList();
+
+                Vskmis.Close();
+
+                return Dis_pre_prnettraList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public void prnettra_import_create(string ref_id)
+        {
+            try
+            {
+                string SQLQuery;
+
+                Connection();
+                Vorwins.Open();
+
+                SQLQuery = "INSERT INTO prnettra_test (" +
+                                       "NET," +
+                                       "item," +
+                                       "gcode," +
+                                       "gname," +
+                                       "gbarcode," +
+                                       "gpartno," +
+                                       "Qty_A," +
+                                       "Qty_B," +
+                                       "NetPrice," +
+                                       "gunit," +
+                                       "gcost," +
+                                       "userid," +
+                                       "startdate," +
+                                       "prtype," +
+                                       "avgcost," +
+                                       "gprice," +
+                                       "gpriceA," +
+                                       "gpriceB," +
+                                       "gpriceC," +
+                                       "gpriceD," +
+                                       "gpriceE," +
+                                       "gpriceF," +
+                                       "TYPE," +
+                                       "carbrand," +
+                                       "named," +
+                                       "ecode," +
+                                       "recdup" +
+                                       ")(SELECT" +
+                                       "'0', " +
+                                       "(SELECT TOP 1 item + 1 FROM prnettra ORDER BY item DESC)), " +
+                                       "gcode," +
+                                       "gname," +
+                                       "gbarcode," +
+                                       "gpartno," +
+                                       "Qty_A," +
+                                       "Qty_B," +
+                                       "NetPrice, " +
+                                       "gunit," +
+                                       "gcost," +
+                                       "userid," +
+                                       "startdate," +
+                                       "prtype," +
+                                       "avgcost," +
+                                       "gprice," +
+                                       "gpriceA," +
+                                       "gpriceB," +
+                                       "gpriceC," +
+                                       "gpriceD," +
+                                       "gpriceE," +
+                                       "gpriceF," +
+                                       "TYPE," +
+                                       "carbrand," +
+                                       "named," +
+                                       "ecode," +
+                                       "recdup" +
+                                       "FROM prnettra_import_log WHERE ref_id = '" + ref_id + " ')";
+
+
+                Vorwins.Query<Dis_pre_prnettraModel>(SQLQuery);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Dis_ediscountModel> Dis_ediscount_List(Dis_ediscountModel Dis_ediscountModel)
+        {
+            try
+            {
+                string SQLQuery;
+
+                if (Dis_ediscountModel.mode == "list")
+                {
+                    SQLQuery = "SELECT * FROM ediscount WHERE  ecode = '" + Dis_ediscountModel.ecode + "' ORDER BY code ASC";
+                }
+                else
+                {
+                    SQLQuery = "SELECT 'ERROR' as event_status";
+                }
+
+                Connection();
+                Vorwins.Open();
+                List<Dis_ediscountModel> Dis_ediscountList = Vorwins.Query<Dis_ediscountModel>(SQLQuery).ToList();
+                Vorwins.Close();
+                return Dis_ediscountList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void Dis_prnettra_Action(Dis_pre_prnettraModel Dis_pre_prnettraModel)
+        {
+            try
+            {
+                Connection();
+
+                Vskmis.Open();
+
+                string SQLQuery;
+
+                SQLQuery = "INSERT INTO prnettra_import_log (" +
+                                        "trans_id," +
+                                        "gcode," +
+                                        "gname," +
+                                        "Qty_A," +
+                                        "Qty_B," +
+                                        "NetPrice," +
+                                        "gunit," +
+                                        "userid," +
+                                        "startdate," +
+                                        "ecode," +
+                                        "session_id," +
+                                        "created_by," +
+                                        "created_date," +
+                                        "event_name," +
+                                        "event_status," +
+                                        "ref_id," +
+                                        "record_status" +
+                                        ")VALUES(" +
+                                        "NEWID()," +
+                                        "'" + Dis_pre_prnettraModel.gcode + "'," +
+                                        "'" + Dis_pre_prnettraModel.gname + "'," +
+                                        "'" + Dis_pre_prnettraModel.Qty_A + "'," +
+                                        "'" + Dis_pre_prnettraModel.Qty_B + "'," +
+                                        "'" + Dis_pre_prnettraModel.NetPrice + "'," +
+                                        "'" + Dis_pre_prnettraModel.gunit + "'," +
+                                        "'" + Dis_pre_prnettraModel.created_by + "'," +
+                                        "GETDATE()," +
+                                        "'" + Dis_pre_prnettraModel.ecode + "'," +
+                                        "'" + Dis_pre_prnettraModel.ref_id + "'," +
+                                        "'" + Dis_pre_prnettraModel.created_by + "'," +
+                                        "GETDATE()," +
+                                        " '" + Dis_pre_prnettraModel.mode + "', " +
+                                        "'PENDING'," +
+                                        "'" + Dis_pre_prnettraModel.ref_id + "'," +
+                                        "'1'" +
+                                        ")";
+
+                Vskmis.Query<Dis_pre_prnettraModel>(SQLQuery).ToList();
+
+                if (Dis_pre_prnettraModel.mode == "CREATE")
+                {
+
+                    SQLQuery = "INSERT INTO prnettra ( " +
+                                                    "NET," +
+                                                    "item," +
+                                                    "gcode," +
+                                                    "gname," +
+                                                    "gbarcode," +
+                                                    "gpartno," +
+                                                    "Qty_A," +
+                                                    "Qty_B," +
+                                                    "NetPrice," +
+                                                    "gunit," +
+                                                    "gcost," +
+                                                    "userid," +
+                                                    "startdate," +
+                                                    "prtype," +
+                                                    "avgcost," +
+                                                    "gprice," +
+                                                    "gpriceA," +
+                                                    "gpriceB," +
+                                                    "gpriceC," +
+                                                    "gpriceD," +
+                                                    "gpriceE," +
+                                                    "gpriceF," +
+                                                    "TYPE," +
+                                                    "carbrand," +
+                                                    "named," +
+                                                    "ecode," +
+                                                    "recdup," +
+                                                    "avgsalecost" +
+                                                    ")(SELECT " +
+                                                    "'0', " +
+                                                    "'1' ," +
+                                                    "pril.gcode," +
+                                                    "pril.gname," +
+                                                    "stmas.gbarcode," +
+                                                    "stmas.SPCODES," +
+                                                    "pril.Qty_A," +
+                                                    "pril.Qty_B," +
+                                                    "pril.NetPrice," +
+                                                    "stmas.UOM," +
+                                                    "stmas.gcost," +
+                                                    "pril.userid," +
+                                                    "pril.startdate," +
+                                                    "'B',"+
+                                                    "stmas.avgcost," +
+                                                    "stmas.gprice," +
+                                                    "stmas.gpriceA," +
+                                                    "stmas.gpriceB," +
+                                                    "stmas.gpriceC," +
+                                                    "stmas.gpriceD," +
+                                                    "stmas.gpriceE," +
+                                                    "stmas.gpriceF," +
+                                                    "stmas.TYPE," +
+                                                    "stmas.carbrand," +
+                                                    "stmas.named," +
+                                                    "pril.ecode," +
+                                                    "''," +
+                                                    "stmas.AvgSalecost " + 
+                                                    "FROM prnettra_import_log pril " +
+                                                    "INNER JOIN vorswin.dbo.stmas stmas ON stmas.code = pril.gcode " +
+                                                    "WHERE ref_id = '" + Dis_pre_prnettraModel.ref_id + "' " +
+                                                    "AND event_name = '" + Dis_pre_prnettraModel.mode + "' " +
+                                                    "AND event_status = 'PENDING' " +
+                                                    "AND record_status = '1' " +
+                                                    ")";
+                }
+
+                else if (Dis_pre_prnettraModel.mode == "UPDATE")
+                {
+                    SQLQuery = "UPDATE prnettra" +
+                               " SET " +
+                                " NET = '0', " +
+                                "item = '1', " +
+                                "gcode = pril.gcode, " +
+                                "gname = pril.gname, " +
+                                "gbarcode = stmas.gbarcode, " +
+                                "gpartno = stmas.SPCODES, " +
+                                "Qty_A = pril.Qty_A, " +
+                                "Qty_B = pril.Qty_B, " +
+                                "NetPrice = pril.NetPrice, " +
+                                "gunit = stmas.UOM, " +
+                                "gcost = stmas.gcost, " +
+                                "userid = pril.userid, " +
+                                "startdate = pril.startdate, " +
+                                "prtype = 'B', " +
+                                "avgcost = stmas.avgcost, " +
+                                "gprice = stmas.gprice, " +
+                                "gpriceA = stmas.gpriceA, " +
+                                "gpriceB = stmas.gpriceB, " +
+                                "gpriceC = stmas.gpriceC, " +
+                                "gpriceD = stmas.gpriceD, " +
+                                "gpriceE = stmas.gpriceE, " +
+                                "gpriceF = stmas.gpriceF, " +
+                                "TYPE = stmas.TYPE, " +
+                                "carbrand = stmas.carbrand, " +
+                                "named = stmas.named, " +
+                                "ecode = pril.ecode, " +
+                                "recdup = '', " +
+                                "avgsalecost = stmas.AvgSalecost " +
+                               " FROM prnettra pr" +
+                               " INNER JOIN prnettra_import_log pril ON pr.gcode = pril.gcode" +
+                               " INNER JOIN vorswin.dbo.stmas stmas ON stmas.code = pril.gcode " +
+                               " WHERE pril.ref_id = '" + Dis_pre_prnettraModel.ref_id + "' " +
+                               " AND pr.gcode = '" + Dis_pre_prnettraModel.gcode + "' " +
+                               " AND pril.event_name = '" + Dis_pre_prnettraModel.mode + "'" +
+                               " AND pril.event_status = 'PENDING' " +
+                               " AND pril.record_status = '1' ";
+                }
+
+                else if (Dis_pre_prnettraModel.mode == "DELETE")
+                {
+                    SQLQuery = "DELETE pr " +
+                               "FROM prnettra pr " +
+                               "INNER JOIN prnettra_import_log pril ON pr.gcode = pril.gcode" +
+                               " WHERE pril.ref_id = '" + Dis_pre_prnettraModel.ref_id + "' " +
+                               " AND pr.gcode = '" + Dis_pre_prnettraModel.gcode + "' " +
+                               " AND pril.event_name = '" + Dis_pre_prnettraModel.mode + "' " +
+                               " AND pril.event_status = 'PENDING' " +
+                               " AND pril.record_status = '1' ";
+                }
+
+                else
+                {
+                    SQLQuery = "SELECT 'ERROR' as event_status";
+                }
+
+                Vskmis.Query<Dis_pre_prnettraModel>(SQLQuery);
+
+                SQLQuery = "UPDATE prnettra_import_log" +
+                           " SET event_status = 'SUCCESS', " +
+                           " updated_by = '" + Dis_pre_prnettraModel.created_by + "', " +
+                           " updated_date = GETDATE() " +
+                           " FROM prnettra_import_log " +
+                           " WHERE ref_id = '" + Dis_pre_prnettraModel.ref_id + "' " +
+                           " AND gcode =  '" + Dis_pre_prnettraModel.gcode + "' " +
+                           " AND event_name =  '" + Dis_pre_prnettraModel.mode + "' ";
+
+                Vskmis.Query<Dis_pre_prnettraModel>(SQLQuery);
+
+                Vskmis.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Dis_prnetfile_check_Model> Dis_prnettra_Check(string ecode, string gcode)
+        {
+            try
+            {
+                string SQLQuery;
+
+
+                SQLQuery = "SELECT TOP 1 gcode FROM prnettra WHERE RTRIM(ecode) = '" + ecode + "' AND RTRIM(gcode) = '" + gcode + "'";
+
+
+                Connection();
+                Vskmis.Open();
+                List<Dis_prnetfile_check_Model> Dis_prnettra_Check = Vskmis.Query<Dis_prnetfile_check_Model>(SQLQuery).ToList();
+                Vskmis.Close();
+                return Dis_prnettra_Check.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+    }
+}

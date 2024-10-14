@@ -1,0 +1,109 @@
+﻿using REPO.Controllers;
+using REPO.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web.Http;
+
+namespace API.Controllers
+{
+    public class CustomerMasterController : ApiController
+    {
+        [Route("api/customermaster_list_get")]
+        [HttpGet]
+        public ResponseModel CustomerMaster_List_Get([FromUri] EmmasModel EmmasModel)
+        {
+            try
+            {
+                CustomerMasterRepository CustomerMasterRepository = new CustomerMasterRepository();
+                List<EmmasModel> CustomerMaster_List_Get = CustomerMasterRepository.CustomerMaster_List_Get(EmmasModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = CustomerMaster_List_Get;
+                _ResponseModel.length = CustomerMaster_List_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("api/customermaster_detail_get")]
+        [HttpGet]
+        public ResponseModel CustomerMaster_Detail_Get([FromUri] string code)
+        {
+            try
+            {
+                CustomerMasterRepository CustomerMasterRepository = new CustomerMasterRepository();
+                List<EmmasModel> CustomerMaster_Detail_Get = CustomerMasterRepository.CustomerMaster_Detail_Get(code);
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = CustomerMaster_Detail_Get;
+                _ResponseModel.length = CustomerMaster_Detail_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("api/MasterDataCustomer")]
+        [HttpGet]
+        public ResponseModel MasterDataCustomer([FromUri] string mode)
+        {
+            try
+            {
+                CustomerMasterRepository CustomerMasterRepository = new CustomerMasterRepository();
+
+                List<MasterDataCustomerModel> MasterDataCustomer = CustomerMasterRepository.MasterDataCustomer(mode);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = MasterDataCustomer;
+                _ResponseModel.length = MasterDataCustomer.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+
+
+    }
+}

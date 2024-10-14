@@ -1,0 +1,102 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace REPO.Models
+{
+    public partial class BrModel
+    {
+        //start 1 รายละเอียด //
+        public string brtra_number { get; set; }
+        public string job_id { get; set; }
+        public string job_detail_id { get; set; }
+        public string br_job_no { get; set; }
+        public string job_detail_barcode { get; set; }
+        public string job_detail_qty { get; set; }
+        public DateTime job_date { get; set; }
+        public string job_no { get; set; }
+        public string job_qty { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public string record_status { get; set; }
+
+        public string invbook { get; set; }
+        public string invno { get; set; }
+        public string number { get; set; }
+        public string stkcod { get; set; }
+        public string coderef { get; set; }
+        public string stkunit { get; set; }
+        public string stktype { get; set; }
+        public string empcod { get; set; }
+        public string empname { get; set; }
+        public string trnflag { get; set; }
+        public string trntype { get; set; }
+        public string trndate { get; set; }
+        public string trnqty { get; set; }
+        public string trnprice { get; set; }
+        public string trnprnet { get; set; }
+        public string trnamo { get; set; }
+        public string trncost { get; set; }
+        public string disone { get; set; }
+        public string distwo { get; set; }
+        public string disthree { get; set; }
+        public string disfour { get; set; }
+        public string gtamount { get; set; }
+        public string gtonhand { get; set; }
+        public string userid { get; set; }
+        public string trnbill { get; set; }
+        public string biclosed { get; set; }
+        public string item { get; set; }
+        public string invpo { get; set; }
+        public string poref { get; set; }
+        public string trnkind { get; set; }
+        public string trnqtyp { get; set; }
+        public string startdate { get; set; }
+        public string recnum { get; set; }
+        public string rdeleted { get; set; }
+        public string usrdel { get; set; }
+        public string deltime { get; set; }
+        public string chkprice { get; set; }
+        public string porecnum { get; set; }
+        public string batchno { get; set; }
+        public string pobatch { get; set; }
+        public string trnsale { get; set; }
+        public string trnsalewin { get; set; }
+        public string lotonhand { get; set; }
+        public string lotgtamo { get; set; }
+        public string lotonhandw { get; set; }
+        public string movingtime { get; set; }
+        public string trnsaled { get; set; }
+        public string stkname { get; set; }
+        public string fgtype { get; set; }
+        public string pbranch { get; set; }
+        public string qtysmal { get; set; }
+        public string totqtysmall { get; set; }
+        public string cremark { get; set; }
+        public string glocat { get; set; }
+        public string gselec { get; set; }
+        public string spcodes { get; set; }
+        public string whdiscode { get; set; }
+        public string trnsalecost { get; set; }
+        public string confirmno { get; set; }
+        public string qtysmall { get; set; }
+        public string oldcost { get; set; }
+        public string oldsalecost { get; set; }
+        public string oldavgcost { get; set; }
+        public string oldavgsalecost { get; set; }
+        public string oldpricepur { get; set; }
+        public string gbarcode { get; set; }
+        public string store_move { get; set; }
+        public string punumber { get; set; }
+        public string qtypercent { get; set; }
+        public string brnumber { get; set; }
+
+
+    }
+
+
+}

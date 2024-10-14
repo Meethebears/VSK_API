@@ -1,0 +1,58 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+using Dapper;
+using MySql.Data.MySqlClient;
+using REPO.Models;
+
+namespace REPO.Controllers
+{
+    public class HrRepository
+    {
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+ 
+        public SqlConnection mscon;
+
+        private void Connection()
+        {
+           
+            string msconstr = ConfigurationManager.ConnectionStrings["VSK_HR"].ToString();
+            mscon = new SqlConnection(msconstr);
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+
+        #region Hr_Detail_Get
+        public List<HrModel> Hr_Detail_Get(HrModel HrModel)
+        {
+            try
+            {
+
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@staff_code", HrModel.staff_code);
+
+                Connection();
+                mscon.Open();
+                List<HrModel> CnVList = SqlMapper.Query<HrModel>(mscon, "SP_Hr_Detail", objParam, commandTimeout: 210, commandType: CommandType.StoredProcedure).ToList();
+
+                mscon.Close();
+                return CnVList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+    }
+}

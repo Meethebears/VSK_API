@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using Dapper;
+using MySql.Data.MySqlClient;
+using REPO.Models;
+
+namespace REPO.Controllers
+{
+    public class CustomerMasterRepository
+    {
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+        public SqlConnection MIS_SERVICE;
+        public SqlConnection VSK_Data;
+
+        private void Connection()
+        {
+            string STR_MIS_SERVICE = ConfigurationManager.ConnectionStrings["MIS_SERVICE"].ToString();
+            MIS_SERVICE = new SqlConnection(STR_MIS_SERVICE);
+
+            string STR_VSK_Data = ConfigurationManager.ConnectionStrings["VSK_Data"].ToString();
+            VSK_Data = new SqlConnection(STR_VSK_Data);
+        }
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+
+
+        public List<EmmasModel> CustomerMaster_List_Get(EmmasModel EmmasModel)
+        {
+
+            try
+            {
+                DynamicParameters objParam = new DynamicParameters();
+
+                //objParam.Add("@search_item_gbarcode", search_item_gbarcode);
+
+                Connection();
+                VSK_Data.Open();
+                List<EmmasModel> CustomerMaster_List_Get = SqlMapper.Query<EmmasModel>(VSK_Data, "SP_MasterData_Customer_List_Get_v1", objParam, commandType: CommandType.StoredProcedure).ToList();
+                VSK_Data.Close();
+                return CustomerMaster_List_Get.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        public List<EmmasModel> CustomerMaster_Detail_Get(string code)
+        {
+            try
+            {
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@code", code);
+
+                Connection();
+                VSK_Data.Open();
+                List<EmmasModel> RequestModelList = SqlMapper.Query<EmmasModel>(VSK_Data, "SP_Customer_Detail_Get", objParam, commandType: CommandType.StoredProcedure).ToList();
+                VSK_Data.Close();
+                return RequestModelList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public List<MasterDataCustomerModel> MasterDataCustomer(string mode)
+        {
+            try
+            {
+                DynamicParameters objParam = new DynamicParameters();
+
+                objParam.Add("@mode", mode);
+
+                Connection();
+                VSK_Data.Open();
+                List<MasterDataCustomerModel> List = SqlMapper.Query<MasterDataCustomerModel>(VSK_Data, "SP_MasterData_CustomerProfile", objParam, commandType: CommandType.StoredProcedure).ToList();
+                VSK_Data.Close();
+                return List.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+    }
+}

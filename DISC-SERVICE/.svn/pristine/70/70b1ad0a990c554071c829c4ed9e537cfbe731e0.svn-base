@@ -1,0 +1,245 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace REPO.Models
+{
+    public partial class Dis_pre_groupModel
+    {
+        public string mode { get; set; }
+        public string trans_id { get; set; }
+        public string discount_type { get; set; }
+        public string code { get; set; }
+        public string lname { get; set; }
+        public string typevat { get; set; }
+        public string remark { get; set; }
+        public DateTime procdate { get; set; }
+        public string procby { get; set; }
+        public string userid { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public DateTime upload_datetime { get; set; }
+        public string event_name { get; set; }
+        public string event_status { get; set; }
+    }
+
+    public partial class Dis_pre_emmaspModel
+    {
+        public string mode { get; set; }
+        public string trans_id { get; set; }
+        public string discount_type { get; set; }
+        public string emmas_code { get; set; }
+        public string emmas_lname { get; set; }
+        public string emmas_address { get; set; }
+        public string emmas_tumbol { get; set; }
+        public string emmas_eamphur { get; set; }
+        public string emmas_eprovinc { get; set; }
+        public string emmas_zip { get; set; }
+        public string emmas_netprice { get; set; }
+        public string emmas_egdis { get; set; }
+        public string dis_pre_group_code { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public DateTime upload_datetime { get; set; }
+        public string event_name { get; set; }
+        public string event_status { get; set; }
+    }
+
+    public partial class Dis_pre_prnettraModel
+    {
+        public string mode { get; set; }
+        public string trans_id { get; set; }
+        public string gcode { get; set; }
+        public string chk_gcode { get; set; }
+        public string gname { get; set; }
+        public string chk_gname { get; set; }
+        public string gbarcode { get; set; }
+        public string gpartno { get; set; }
+        public double Qty_A { get; set; }
+        public double Qty_B { get; set; }
+        public double NetPrice { get; set; }
+        public string gunit { get; set; }
+        public string chk_gunit { get; set; }
+        public double gcost { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+        public string prtype { get; set; }
+        public double avgcost { get; set; }
+        public double gprice { get; set; }
+        public double gpriceA { get; set; }
+        public double gpriceB { get; set; }
+        public double gpriceC { get; set; }
+        public double gpriceD { get; set; }
+        public double gpriceE { get; set; }
+        public double gpriceF { get; set; }
+        public string TYPE { get; set; }
+        public string carbrand { get; set; }
+        public string named { get; set; }
+        public string ecode { get; set; }
+        public string recdup { get; set; }
+        public double avgsalecost { get; set; }
+        public double stmas_AvgSalecost { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public DateTime upload_datetime { get; set; }
+        public string event_name { get; set; }
+        public string event_status { get; set; }
+        public string chk_duplicate { get; set; }
+        public string session_id { get; set; }
+
+    }
+
+    public partial class Dis_prnetfileModel
+    {
+        public string mode { get; set; }
+        public string trans_id { get; set; }
+        public string prnetfile_code { get; set; }
+        public string prnetfile_lname { get; set; }
+        public string prnetfile_remark { get; set; }
+        public DateTime prnetfile_procdate { get; set; }
+        public string prnetfile_procby { get; set; }
+        public string prnetfile_userid { get; set; }
+        public string prnetfile_named { get; set; }
+        public string prnetfile_TYPE { get; set; }
+        public string prnetfile_carbrand { get; set; }
+        public string prnetfile_chrcode { get; set; }
+        public string prnetfile_gmodel { get; set; }
+        public string prnetfile_typeb { get; set; }
+        public DateTime upload_datetime { get; set; }
+        public string event_name { get; set; }
+        public string event_status { get; set; }
+
+        //action strat//
+        public string code { get; set; }
+        public string lname { get; set; }
+        public string remark { get; set; }
+        public DateTime procdate { get; set; }
+        public string procby { get; set; }
+        public string userid { get; set; }
+        public string named { get; set; }
+        public string TYPE { get; set; }
+        public string carbrand { get; set; }
+        public string chrcode { get; set; }
+        public string gmodel { get; set; }
+        public string typeb { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public string record_status { get; set; }
+        //action end//
+
+    }
+
+    public partial class Dis_prnetfile_action_Model
+    {
+        public string mode { get; set; }
+        public string trans_id { get; set; }
+        public string code { get; set; }
+        public string lname { get; set; }
+        public string remark { get; set; }
+        public DateTime procdate { get; set; }
+        public string procby { get; set; }
+        public string userid { get; set; }
+        public string named { get; set; }
+        public string TYPE { get; set; }
+        public string carbrand { get; set; }
+        public string chrcode { get; set; }
+        public string gmodel { get; set; }
+        public string typeb { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public string record_status { get; set; }
+        public string event_name { get; set; }
+        public string event_status { get; set; }
+        public string ref_id { get; set; }
+
+    }
+
+    public partial class Dis_gdisheadModel {
+        public string mode { get; set; }
+        public string trans_id { get; set; }
+        public string code { get; set; }
+        public string lname { get; set; }
+        public string remark { get; set; }
+        public DateTime procdate { get; set; }
+        public string procby { get; set; }
+        public string userid { get; set; }
+    }
+
+    public partial class Dis_ediscountModel {
+
+        public string mode { get; set; }
+        public string trans_id { get; set; }
+        public string code { get; set; }
+        public string cargroup { get; set; }
+        public string chrcode { get; set; }
+        public double dvat { get; set; }
+        public string ecode { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+        public string dcostby { get; set; }
+        public DateTime dcostTime { get; set; }
+
+        public double adis1 { get; set; }
+        public double adis2 { get; set; }
+        public double adis3 { get; set; }
+
+        public double bdis1 { get; set; }
+        public double bdis2 { get; set; }
+        public double bdis3 { get; set; }
+
+        public double cdis1 { get; set; }
+        public double cdis2 { get; set; }
+        public double cdis3 { get; set; }
+
+        public double ddis1 { get; set; }
+        public double ddis2 { get; set; }
+        public double ddis3 { get; set; }
+
+        public double edis1 { get; set; }
+        public double edis2 { get; set; }
+        public double edis3 { get; set; }
+
+        public double fdis1 { get; set; }
+        public double fdis2 { get; set; }
+        public double fdis3 { get; set; }
+
+        public double gdis1 { get; set; }
+        public double gdis2 { get; set; }
+        public double gdis3 { get; set; }
+
+        public double hdis1 { get; set; }
+        public double hdis2 { get; set; }
+        public double hdis3 { get; set; }
+
+        public double idis1 { get; set; }
+        public double idis2 { get; set; }
+        public double idis3 { get; set; }
+
+        public double jdis1 { get; set; }
+        public double jdis2 { get; set; }
+        public double jdis3 { get; set; }
+
+        public double kdis1 { get; set; }
+        public double kdis2 { get; set; }
+        public double kdis3 { get; set; }
+
+        public double Ldis1 { get; set; }
+        public double Ldis2 { get; set; }
+        public double Ldis3 { get; set; }
+
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public DateTime upload_datetime { get; set; }
+        public string event_name { get; set; }
+        public string event_status { get; set; }
+
+    }
+
+
+}

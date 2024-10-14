@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace REPO.Models
+{
+    public partial class HrModel
+    {
+        //start 1 รายละเอียด //
+        public string staff_id { get; set; }
+        public string staff_code { get; set; }
+        public string staff_prefix { get; set; }
+        public string staff_name { get; set; }
+        public string staff_nickname { get; set; }
+        public string staff_sec { get; set; }
+        public string staff_dept { get; set; }
+        public string staff_pos { get; set; }
+        public DateTime staff_job_startdate { get; set; }
+        public string staff_leader_asses1 { get; set; }
+        public string staff_leader_asses2 { get; set; }
+        public string staff_leader_asses3 { get; set; }
+        public string staff_form { get; set; }
+        public string created_by { get; set; }
+        public DateTime created_date { get; set; }
+        public string updated_by { get; set; }
+        public DateTime updated_date { get; set; }
+        public string record_status { get; set; }
+
+    }
+}

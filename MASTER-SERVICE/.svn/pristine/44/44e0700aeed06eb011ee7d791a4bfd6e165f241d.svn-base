@@ -1,0 +1,329 @@
+﻿using REPO.Models;
+using REPO.Controllers;
+using System.Web.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Globalization;
+
+namespace API.Controllers
+{
+    public class MktController : ApiController
+    {
+
+        #region Campaign_Setup_Add
+        [Route("v1/Campaign_Setup_Add")]
+        [HttpPut]
+        public ResponseModel Campaign_Setup_Add([FromBody] campaign_modal campaign_modal)
+        {
+
+            try
+            {
+                //  CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MktRepository MktRepository = new MktRepository();
+
+                MktRepository.Campaign_Setup_Add(campaign_modal);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Campaign_Setup_Get
+        [Route("v1/Campaign_Setup_Get")]
+        [HttpGet]
+        public ResponseModel Campaign_Setup_Get([FromUri] campaign_modal campaign_modal)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MktRepository MktRepository = new MktRepository();
+
+                List<campaign_modal> Campaign_Setup_Get = MktRepository.Campaign_Setup_Get(campaign_modal);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Campaign_Setup_Get;
+                _ResponseModel.length = Campaign_Setup_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Campaign_Setup_Update
+        [Route("v1/Campaign_Setup_Update")]
+        [HttpPut]
+        public ResponseModel Campaign_Setup_Update([FromBody] campaign_modal campaign_modal)
+        {
+
+            try
+            {
+                //  CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MktRepository MktRepository = new MktRepository();
+
+                MktRepository.Campaign_Setup_Update(campaign_modal);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Check_Dup_Campaign
+        [Route("v1/Check_Dup_Campaign")]
+        [HttpGet]
+        public ResponseModel Check_Dup_Campaign([FromUri] campaign_modal campaign_modal)
+        {
+
+            try
+            {
+                //CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MktRepository MktRepository = new MktRepository();
+
+                List<campaign_modal> Check_Dup_Campaign = MktRepository.Check_Dup_Campaign(campaign_modal);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Check_Dup_Campaign;
+                _ResponseModel.length = Check_Dup_Campaign.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Voucher_Redeem_Add
+        [Route("v1/Voucher_Redeem_Add")]
+        [HttpPut]
+        public ResponseModel Voucher_Redeem_Add([FromBody] redeem_modal redeem_modal)
+        {
+
+            try
+            {
+                //  CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MktRepository MktRepository = new MktRepository();
+
+                MktRepository.Voucher_Redeem_Add(redeem_modal);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Voucher_Redeem_Get
+        [Route("v1/Voucher_Redeem_Get")]
+        [HttpGet]
+        public ResponseModel Voucher_Redeem_Get([FromUri] redeem_modal redeem_modal)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MktRepository MktRepository = new MktRepository();
+
+                List<redeem_modal> Voucher_Redeem_Get = MktRepository.Voucher_Redeem_Get(redeem_modal);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Voucher_Redeem_Get;
+                _ResponseModel.length = Voucher_Redeem_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Check_Campaign_Setup
+        [Route("v1/Check_Campaign_Setup")]
+        [HttpGet]
+        public ResponseModel Check_Campaign_Setup([FromUri] campaign_modal campaign_modal)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MktRepository MktRepository = new MktRepository();
+
+                List<campaign_modal> Voucher_Redeem_Get = MktRepository.Check_Campaign_Setup(campaign_modal);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Voucher_Redeem_Get;
+                _ResponseModel.length = Voucher_Redeem_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+        #region Voucher_Redeem_Salefile_Get
+        [Route("v1/Voucher_Redeem_Salefile_Get")]
+        [HttpGet]
+        public ResponseModel Voucher_Redeem_Salefile_Get([FromUri] redeem_modal redeem_modal)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                MktRepository MktRepository = new MktRepository();
+
+                List<redeem_modal> Voucher_Redeem_Salefile_Get = MktRepository.Voucher_Redeem_Salefile_Get(redeem_modal);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Voucher_Redeem_Salefile_Get;
+                _ResponseModel.length = Voucher_Redeem_Salefile_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+    }
+}

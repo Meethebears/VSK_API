@@ -1,0 +1,116 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace REPO.Models
+{
+    public partial class MasterModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string codechr { get; set; }
+        public string ctype { get; set; }
+        public string userid { get; set; }
+        public string rec { get; set; }
+        public string function_type { get; set; }
+        public DateTime startdate { get; set; }
+        
+    }
+    public partial class gcode_aModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string codechr { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_aexprModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string codechr { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_bModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_bexpModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_cModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string userid { get; set; }
+        public string rec { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_cexpModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string userid { get; set; }
+        public string rec { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_dModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_dexpModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_eModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+    public partial class gcode_eexpModel
+    {
+        //start 1 รายละเอียด //
+        public string code { get; set; }
+        public string gname { get; set; }
+        public string userid { get; set; }
+        public DateTime startdate { get; set; }
+
+    }
+}

@@ -1,0 +1,55 @@
+﻿using REPO.Models;
+using REPO.Controllers;
+using System.Web.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Globalization;
+
+namespace API.Controllers
+{
+    public class HrController : ApiController
+    {
+
+        #region Hr_Detail_Get
+        [Route("api/Hr_Detail_Get")]
+        [HttpGet]
+        public ResponseModel Hr_Detail_Get([FromUri] HrModel HrModel)
+        {
+
+            try
+            {
+                CultureInfo cultureinfo = new CultureInfo("en-US");
+
+                HrRepository HrRepository = new HrRepository();
+
+                List<HrModel> Hr_Detail_Get = HrRepository.Hr_Detail_Get(HrModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Hr_Detail_Get;
+                _ResponseModel.length = Hr_Detail_Get.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+
+            }
+            catch (Exception ex)
+            {
+
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+        #endregion
+
+    }
+}

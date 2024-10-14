@@ -1,0 +1,509 @@
+﻿using REPO.Controllers;
+using REPO.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web.Http;
+
+namespace API.Controllers
+{
+    public class DiscountController : ApiController
+    {
+        [Route("v1/prnetfile_select2_search")]
+        [HttpGet]
+        public ResponseModel prnetfile_select2_search([FromUri] string id, string text, string keywords)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<ResponseSelect2Model> dis_pre_group_search = DiscountRepository.prnetfile_select2_search(id, text, keywords);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = dis_pre_group_search;
+                _ResponseModel.length = dis_pre_group_search.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/gdishead_select2_search")]
+        [HttpGet]
+        public ResponseModel gdishead_select2_search([FromUri] string id, string text, string keywords)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<ResponseSelect2Model> gdishead_select2_search = DiscountRepository.gdishead_select2_search(id, text, keywords);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = gdishead_select2_search;
+                _ResponseModel.length = gdishead_select2_search.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/stmas_select2_search")]
+        [HttpGet]
+        public ResponseModel stmas_select2_search([FromUri] string id, string text, string keywords)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<ResponseStmasSelect2Model> stmas_select2_search = DiscountRepository.stmas_select2_search(id, text, keywords);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = stmas_select2_search;
+                _ResponseModel.length = stmas_select2_search.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        
+
+        [Route("v1/dis_emmas_List")]
+        [HttpGet]
+        public ResponseModel Dis_emmas_List([FromUri] string code, string mode)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<Dis_pre_emmaspModel> Dis_emmas_List = DiscountRepository.Dis_emmas_List(code, mode);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Dis_emmas_List;
+                _ResponseModel.length = Dis_emmas_List.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/Dis_prnetfile_List")]
+        [HttpGet]
+        public ResponseModel Dis_prnetfile_List([FromUri] string mode)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<Dis_prnetfileModel> Dis_prnetfile_List = DiscountRepository.Dis_prnetfile_List(mode);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Dis_prnetfile_List;
+                _ResponseModel.length = Dis_prnetfile_List.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/dis_ediscount_list")]
+        [HttpGet]
+        public ResponseModel Dis_ediscount_List([FromUri] Dis_ediscountModel Dis_ediscountModel)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<Dis_ediscountModel> Dis_ediscount_List = DiscountRepository.Dis_ediscount_List(Dis_ediscountModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Dis_ediscount_List;
+                _ResponseModel.length = Dis_ediscount_List.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/prnettra_import_verify")]
+        [HttpPost]
+        public ResponseModel prnettra_import_verify(List<Dis_pre_prnettraModel> Dis_pre_prnettraModel)
+        {
+
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<Dis_pre_prnettraModel> Dis_pre_prnettraList = new List<Dis_pre_prnettraModel>();
+
+                foreach (var Dis_pre_prnettraItem in Dis_pre_prnettraModel)
+                {
+                    Dis_pre_prnettraModel Dis_pre_prnettraData = new Dis_pre_prnettraModel();
+                    Dis_pre_prnettraData.gcode = Dis_pre_prnettraItem.gcode;
+                    Dis_pre_prnettraData.gname = Dis_pre_prnettraItem.gname;
+                    Dis_pre_prnettraData.Qty_A = Dis_pre_prnettraItem.Qty_A;
+                    Dis_pre_prnettraData.Qty_B = Dis_pre_prnettraItem.Qty_B;
+                    Dis_pre_prnettraData.NetPrice = Dis_pre_prnettraItem.NetPrice;
+                    Dis_pre_prnettraData.gunit = Dis_pre_prnettraItem.gunit;
+                    Dis_pre_prnettraData.session_id = Dis_pre_prnettraItem.session_id;
+                    Dis_pre_prnettraData.userid = Dis_pre_prnettraItem.userid;
+                    Dis_pre_prnettraData.ecode = Dis_pre_prnettraItem.ecode;
+                    Dis_pre_prnettraData.ref_id = Dis_pre_prnettraItem.ref_id;
+
+                    Dis_pre_prnettraList.Add(Dis_pre_prnettraData);
+                }
+
+                List<Dis_pre_prnettraModel> prnettra_import_verify_list = DiscountRepository.prnettra_import_verify(Dis_pre_prnettraList);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = prnettra_import_verify_list;
+                _ResponseModel.length = prnettra_import_verify_list.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+
+        [Route("v1/Dis_prnetfile_Action")]
+        [HttpPost]
+        public ResponseModel Dis_prnetfile_Action([FromBody] Dis_prnetfile_action_Model Dis_prnetfileModel)
+        {
+            try
+            {
+
+                ResponseModel _ResponseCheckModel = new ResponseModel();
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseCheckModel = Dis_prnetfile_Check(Dis_prnetfileModel.code);
+
+                if (_ResponseCheckModel.length <= 0 && Dis_prnetfileModel.mode == "CREATE")
+                {
+                    DiscountRepository DiscountRepository = new DiscountRepository();
+
+                    DiscountRepository.Dis_prnetfile_Action(Dis_prnetfileModel);
+
+                    _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                    _ResponseModel.data = Dis_prnetfileModel.mode;
+                    //_ResponseModel.length = Dis_prnetfile_Action.Count();
+                    _ResponseModel.status = "Success";
+
+                }
+                else if (_ResponseCheckModel.length > 0 && Dis_prnetfileModel.mode == "CREATE")
+                {
+
+                    _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                    _ResponseModel.length = _ResponseCheckModel.length;
+                    _ResponseModel.status = "Duplicate";
+
+                }
+                else if (_ResponseCheckModel.length > 0 && Dis_prnetfileModel.mode != "CREATE") 
+                {
+
+                    DiscountRepository DiscountRepository = new DiscountRepository();
+
+                    DiscountRepository.Dis_prnetfile_Action(Dis_prnetfileModel);
+
+                    _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                    _ResponseModel.data = Dis_prnetfileModel.mode;
+                    //_ResponseModel.length = Dis_prnetfile_Action.Count();
+                    _ResponseModel.status = "Success";
+
+                }
+                else
+                {
+                    _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                    _ResponseModel.length = _ResponseCheckModel.length;
+                    _ResponseModel.status = "Error";
+                }
+
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/Dis_prnetfile_Check")]
+        [HttpGet]
+        public ResponseModel Dis_prnetfile_Check([FromUri] string code)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<Dis_prnetfile_check_Model> Dis_prnetfile_Check = DiscountRepository.Dis_prnetfile_Check(code);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Dis_prnetfile_Check;
+                _ResponseModel.length = Dis_prnetfile_Check.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/Dis_prnettra_list")]
+        [HttpGet]
+        public ResponseModel prnettra_list([FromUri] Dis_pre_prnettraModel Dis_pre_prnettraModel)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<Dis_pre_prnettraModel> prnettra_list = DiscountRepository.Dis_pre_prnettra_List(Dis_pre_prnettraModel);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = prnettra_list;
+                _ResponseModel.length = prnettra_list.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/Dis_prnettra_Action")]
+        [HttpPost]
+        public ResponseModel Dis_prnettra_Action([FromBody] Dis_pre_prnettraModel Dis_pre_prnettraModel)
+        {
+            try
+            {
+
+                ResponseModel _ResponseCheckModel = new ResponseModel();
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseCheckModel = Dis_prnettra_Check(Dis_pre_prnettraModel.ecode, Dis_pre_prnettraModel.gcode);
+
+
+                if (_ResponseCheckModel.length <= 0 && Dis_pre_prnettraModel.mode == "CREATE")
+                {
+                    DiscountRepository DiscountRepository = new DiscountRepository();
+
+                    DiscountRepository.Dis_prnettra_Action(Dis_pre_prnettraModel);
+
+                    _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                    _ResponseModel.data = Dis_pre_prnettraModel.mode;
+                    //_ResponseModel.length = Dis_prnetfile_Action.Count();
+                    _ResponseModel.status = "Success";
+
+                }
+                else if (_ResponseCheckModel.length > 0 && Dis_pre_prnettraModel.mode == "CREATE")
+                {
+                    DiscountRepository DiscountRepository = new DiscountRepository();
+
+                    DiscountRepository.Dis_prnettra_Action(Dis_pre_prnettraModel);
+
+                    _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                    _ResponseModel.data = Dis_pre_prnettraModel.mode;
+                    //_ResponseModel.length = Dis_prnetfile_Action.Count();
+                    _ResponseModel.status = "Duplicate";
+
+                }
+                else if (_ResponseCheckModel.length > 0 && Dis_pre_prnettraModel.mode != "CREATE")
+                {
+                    DiscountRepository DiscountRepository = new DiscountRepository();
+
+                    DiscountRepository.Dis_prnettra_Action(Dis_pre_prnettraModel);
+
+                    _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                    _ResponseModel.data = Dis_pre_prnettraModel.mode;
+                    //_ResponseModel.length = Dis_prnetfile_Action.Count();
+                    _ResponseModel.status = "Success";
+
+                }
+                else
+                {
+                    _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                    _ResponseModel.length = _ResponseCheckModel.length;
+                    _ResponseModel.status = "Error";
+                }
+
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+        [Route("v1/Dis_prnettra_Check")]
+        [HttpPost]
+        public ResponseModel Dis_prnettra_Check([FromBody] string ecode, string gcode)
+        {
+            try
+            {
+                DiscountRepository DiscountRepository = new DiscountRepository();
+
+                List<Dis_prnetfile_check_Model> Dis_prnettra_Check = DiscountRepository.Dis_prnettra_Check(ecode, gcode);
+
+                ResponseModel _ResponseModel = new ResponseModel();
+
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.data = Dis_prnettra_Check;
+                _ResponseModel.length = Dis_prnettra_Check.Count();
+                _ResponseModel.status = "Success";
+
+                return _ResponseModel;
+            }
+            catch (Exception ex)
+            {
+                ResponseModel _ResponseModel = new ResponseModel();
+                _ResponseModel.result_datetime = DateTime.Now.ToString("yyyy-MM-dd hh:mm");
+                _ResponseModel.status = "Error";
+                _ResponseModel.error_message = ex.Message.ToString();
+                _ResponseModel.error_stacktrace = ex.StackTrace.ToString();
+                _ResponseModel.error_source = ex.Source.ToString();
+
+                return _ResponseModel;
+            }
+
+        }
+
+    }
+
+}

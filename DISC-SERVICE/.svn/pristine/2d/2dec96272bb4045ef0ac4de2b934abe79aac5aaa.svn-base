@@ -1,0 +1,370 @@
+﻿using Dapper;
+using REPO.Models;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web.Mvc;
+
+namespace REPO.Controllers
+{
+    public class DiscountRepository : Controller
+    {
+
+        private string session_id;
+
+        #region Connection_SQL Server
+        //-------------------Start Connection_SQL ------------------------//
+        public SqlConnection VSK_Data;
+        public SqlConnection Vorwins;
+
+
+        private void Connection()
+        {
+            VSK_Data = new SqlConnection(ConfigurationManager.ConnectionStrings["VSK_Data"].ToString());
+            Vorwins = new SqlConnection(ConfigurationManager.ConnectionStrings["Vorwins"].ToString());
+        }
+
+        //-------------------End Connection_SQL ------------------------//
+        #endregion
+        public List<ResponseSelect2Model> prnetfile_select2_search(string id, string text, string keywords)
+        {
+            try
+            {
+                string SQLQuery = "SELECT TOP 5 " + id + " AS id, " + text + " as text FROM prnetfile WHERE RTRIM(code) LIKE '" + keywords + "%' OR RTRIM(lname) LIKE '" + keywords + "%' OR RTRIM(remark) LIKE '" + keywords + "%'";
+                Connection();
+                Vorwins.Open();
+                List<ResponseSelect2Model> RequestModelList = Vorwins.Query<ResponseSelect2Model>(SQLQuery).ToList();
+                Vorwins.Close();
+                return RequestModelList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public List<ResponseSelect2Model> gdishead_select2_search(string id, string text, string keywords)
+        {
+            try
+            {
+                string SQLQuery = "SELECT TOP 5 " + id + " AS id, " + text + " as text FROM gdishead WHERE RTRIM(code) LIKE '" + keywords + "%' OR RTRIM(lname) LIKE '" + keywords + "%' OR RTRIM(remark) LIKE '" + keywords + "%'";
+                Connection();
+                Vorwins.Open();
+                List<ResponseSelect2Model> RequestModelList = Vorwins.Query<ResponseSelect2Model>(SQLQuery).ToList();
+                Vorwins.Close();
+                return RequestModelList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public List<Dis_pre_prnettraModel> Dis_pre_prnettra_List(Dis_pre_prnettraModel Dis_pre_prnettraModel)
+        {
+            try
+            {
+                string SQLQuery = "SELECT prnettra.*, stmas.AvgSalecost as stmas_AvgSalecost FROM prnettra INNER JOIN stmas ON stmas.code = prnettra.gcode WHERE ecode = '" + Dis_pre_prnettraModel.ecode + "'";
+                Connection();
+                Vorwins.Open();
+                List<Dis_pre_prnettraModel> Dis_pre_prnettraList = Vorwins.Query<Dis_pre_prnettraModel>(SQLQuery).ToList();
+                Vorwins.Close();
+                return Dis_pre_prnettraList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Dis_pre_emmaspModel> Dis_emmas_List(string code, string mode) //mode netprice or egdis
+        {
+            try
+            {
+                string SQLQuery;
+
+                if (mode == "netprice")
+                {
+                    SQLQuery = "SELECT " +
+                               "    RTRIM(code) AS emmas_code, " +
+                               "    RTRIM(lname) AS emmas_lname, " +
+                               "    RTRIM(eaddress) AS emmas_address, " +
+                               "    RTRIM(etumbol) AS emmas_tumbol, " +
+                               "    RTRIM(eamphur) AS emmas_eamphur, " +
+                               "    RTRIM(eprovinc) AS emmas_eprovinc, " +
+                               "    RTRIM(ezip) AS emmas_zip, " +
+                               "    RTRIM(netprice) AS emmas_netprice, " +
+                               "    RTRIM(egdis) AS emmas_egdis " +
+                               "FROM emmas WHERE netprice = '" + code + "' ORDER BY code ASC";
+                }
+                else if (mode == "egdis")
+                {
+                    SQLQuery = "SELECT " +
+                               "    RTRIM(code) AS emmas_code, " +
+                               "    RTRIM(lname) AS emmas_lname, " +
+                               "    RTRIM(eaddress) AS emmas_address, " +
+                               "    RTRIM(etumbol) AS emmas_tumbol, " +
+                               "    RTRIM(eamphur) AS emmas_eamphur, " +
+                               "    RTRIM(eprovinc) AS emmas_eprovinc, " +
+                               "    RTRIM(ezip) AS emmas_zip, " +
+                               "    RTRIM(netprice) AS emmas_netprice, " +
+                               "    RTRIM(egdis) AS emmas_egdis " +
+                               "FROM emmas WHERE egdis = '" + code + "' ORDER BY code ASC";
+                }
+                else
+                {
+                    SQLQuery = "SELECT 'ERROR' as event_status";
+                }
+
+                Connection();
+                Vorwins.Open();
+                List<Dis_pre_emmaspModel> Dis_pre_emmaspList = Vorwins.Query<Dis_pre_emmaspModel>(SQLQuery).ToList();
+                Vorwins.Close();
+                return Dis_pre_emmaspList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Dis_prnetfileModel> Dis_prnetfile_List(string mode)
+        {
+            try
+            {
+                string SQLQuery;
+
+                if (mode == "list")
+                {
+                    SQLQuery = "SELECT " +
+                               "    RTRIM(code) AS prnetfile_code, " +
+                               "    RTRIM(lname) AS prnetfile_lname, " +
+                               "    RTRIM(remark) AS prnetfile_remark, " +
+                               "    RTRIM(procdate) AS prnetfile_procdate, " +
+                               "    RTRIM(procby) AS prnetfile_procby, " +
+                               "    RTRIM(userid) AS prnetfile_userid, " +
+                               "    RTRIM(named) AS prnetfile_named, " +
+                               "    RTRIM(TYPE) AS prnetfile_TYPE, " +
+                               "    RTRIM(carbrand) AS prnetfile_carbrand, " +
+                               "    RTRIM(chrcode) AS prnetfile_chrcode, " +
+                               "    RTRIM(gmodel) AS prnetfile_gmodel, " +
+                               "    RTRIM(typeb) AS prnetfile_typeb " +
+                               "FROM prnetfile ORDER BY code ASC";
+                }
+                else
+                {
+                    SQLQuery = "SELECT 'ERROR' as event_status";
+                }
+
+                Connection();
+                Vorwins.Open();
+                List<Dis_prnetfileModel> Dis_prnetfileList = Vorwins.Query<Dis_prnetfileModel>(SQLQuery).ToList();
+                Vorwins.Close();
+                return Dis_prnetfileList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<ResponseStmasSelect2Model> stmas_select2_search(string id, string text, string keywords)
+        {
+            try
+            {
+                string SQLQuery = "SELECT TOP 10 " + id + " AS id, " + text + " as text, avgcost, uom FROM stmas WHERE '" + keywords + "' != '' AND  (RTRIM(gbarcode) LIKE '%" + keywords + "%' OR RTRIM(name) LIKE '%" + keywords + "%' OR RTRIM(code) LIKE '%" + keywords + "%' OR RTRIM(SPCODES) LIKE '%" + keywords + "%')";
+                Connection();
+                Vorwins.Open();
+                List<ResponseStmasSelect2Model> RequestModelList = Vorwins.Query<ResponseStmasSelect2Model>(SQLQuery).ToList();
+                Vorwins.Close();
+                return RequestModelList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public List<Dis_pre_prnettraModel> prnettra_import_verify(List<Dis_pre_prnettraModel> Dis_pre_prnettraModel)
+        {
+            try
+            {
+                string SQLQuery;
+
+                Connection();
+                Vorwins.Open();
+
+                foreach (var Dis_pre_prnettraData in Dis_pre_prnettraModel)
+                {
+                    session_id = Dis_pre_prnettraData.session_id;
+
+                    SQLQuery = "INSERT INTO prnettra_import_log (" +
+                                        "trans_id," +
+                                        "gcode," +
+                                        "gname," +
+                                        "Qty_A," +
+                                        "Qty_B," +
+                                        "NetPrice," +
+                                        "gunit," +
+                                        "userid," +
+                                        "startdate," +
+                                        "ecode," +
+                                        "session_id," +
+                                        "created_date," +
+                                        "event_name," +
+                                        "event_status" +
+                                        ")VALUES(" +
+                                        "NEWID(),"+
+                                        "'" + Dis_pre_prnettraData.gcode + "'," +
+                                        "'" + Dis_pre_prnettraData.gname + "'," +
+                                        "'" + Dis_pre_prnettraData.Qty_A + "'," +
+                                        "'" + Dis_pre_prnettraData.Qty_B + "'," +
+                                        "'" + Dis_pre_prnettraData.NetPrice + "'," +
+                                        "'" + Dis_pre_prnettraData.gunit + "'," +
+                                        "'" + Dis_pre_prnettraData.userid + "'," +
+                                        "GETDATE()," +
+                                        "'" + Dis_pre_prnettraData.ecode + "'," +
+                                        "'" + Dis_pre_prnettraData.session_id + "'," +
+                                        "GETDATE()," +
+                                        "'IMPORT'," +
+                                        "'PENDING'" +
+                                        ")";
+
+                    Vorwins.Query(SQLQuery).ToList();
+                }
+
+                SQLQuery = "SELECT prnettra_import_log.gcode," +
+                                                "rtrim(prnettra_import_log.gcode) as gcode," +
+                                                "CASE WHEN rtrim(prnettra_import_log.gcode) = rtrim(stmas.code) THEN '' ELSE 'รหัสสินค้าไม่ถูกต้อง, ' END as chk_gcode," +
+                                                "rtrim(stmas.gbarcode) as gbarcode," +
+                                                "rtrim(gname) as gname," +
+                                                "CASE WHEN rtrim(gname) = rtrim(stmas.name) THEN '' ELSE 'ชือสินค้าไม่ถูกต้อง, ' END as chk_gname," +
+                                                "rtrim(stmas.SPCODES) as gpartno," +
+                                                "Qty_A," +
+                                                "Qty_B," +
+                                                "NetPrice," +
+                                                "rtrim(gunit) as gunit," +
+                                                "CASE WHEN rtrim(gunit) = rtrim(stmas.uom) THEN '' ELSE 'หน่วยสินค้าไม่ถูกต้อง ' END AS chk_gunit," +
+                                                 "stmas.avgcost as avgcost," +
+                                                "session_id," +
+                                                "ISNULL((SELECT TOP 1 CONCAT('ข้อมูลซ้ำ สร้างโดย ', prnettra.userid ,' วัน/เวลา ',prnettra.startdate ) FROM prnettra WHERE prnettra.gcode = prnettra_import_log.gcode AND prnettra.ecode = prnettra_import_log.ecode),'') AS chk_duplicate" +
+                             " FROM prnettra_import_log INNER JOIN stmas ON stmas.code = prnettra_import_log.gcode WHERE session_id = '" + session_id + "' ORDER BY chk_duplicate DESC,chk_gcode DESC,chk_gname DESC, chk_gunit DESC";
+
+                List<Dis_pre_prnettraModel> Dis_pre_prnettraList = Vorwins.Query<Dis_pre_prnettraModel>(SQLQuery).ToList();
+
+                Vorwins.Close();
+
+                return Dis_pre_prnettraList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public void prnettra_import_create(string session_id)
+        {
+            try
+            {
+                string SQLQuery;
+
+                Connection();
+                Vorwins.Open();
+
+                SQLQuery = "INSERT INTO prnettra_test (" +
+                                       "NET," +
+                                       "item," +
+                                       "gcode," +
+                                       "gname," +
+                                       "gbarcode," +
+                                       "gpartno," +
+                                       "Qty_A," +
+                                       "Qty_B," +
+                                       "NetPrice," +
+                                       "gunit," +
+                                       "gcost," +
+                                       "userid," +
+                                       "startdate," +
+                                       "prtype," +
+                                       "avgcost," +
+                                       "gprice," +
+                                       "gpriceA," +
+                                       "gpriceB," +
+                                       "gpriceC," +
+                                       "gpriceD," +
+                                       "gpriceE," +
+                                       "gpriceF," +
+                                       "TYPE," +
+                                       "carbrand," +
+                                       "named," +
+                                       "ecode," +
+                                       "recdup" +
+                                       ")(SELECT" +
+                                       "'0', "+
+                                       "(SELECT TOP 1 item + 1 FROM prnettra ORDER BY item DESC)), " +
+                                       "gcode," +
+                                       "gname," +
+                                       "gbarcode," +
+                                       "gpartno," +
+                                       "Qty_A," +
+                                       "Qty_B," +
+                                       "NetPrice, " +
+                                       "gunit," +
+                                       "gcost," +
+                                       "userid," +
+                                       "startdate," +
+                                       "prtype," +
+                                       "avgcost," +
+                                       "gprice," +
+                                       "gpriceA," +
+                                       "gpriceB," +
+                                       "gpriceC," +
+                                       "gpriceD," +
+                                       "gpriceE," +
+                                       "gpriceF," +
+                                       "TYPE," +
+                                       "carbrand," +
+                                       "named," +
+                                       "ecode," +
+                                       "recdup" +
+                                       "FROM prnettra_import_log WHERE session_id = '" + session_id + " ')";
+                
+
+                Vorwins.Query<Dis_pre_prnettraModel>(SQLQuery);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Dis_ediscountModel> Dis_ediscount_List(Dis_ediscountModel Dis_ediscountModel)
+        {
+            try
+            {
+                string SQLQuery;
+
+                if (Dis_ediscountModel.mode == "list")
+                {
+                    SQLQuery = "SELECT * FROM ediscount WHERE  ecode = '" + Dis_ediscountModel.ecode + "' ORDER BY code ASC";
+                }
+                else
+                {
+                    SQLQuery = "SELECT 'ERROR' as event_status";
+                }
+
+                Connection();
+                Vorwins.Open();
+                List<Dis_ediscountModel> Dis_ediscountList = Vorwins.Query<Dis_ediscountModel>(SQLQuery).ToList();
+                Vorwins.Close();
+                return Dis_ediscountList.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+    }
+}

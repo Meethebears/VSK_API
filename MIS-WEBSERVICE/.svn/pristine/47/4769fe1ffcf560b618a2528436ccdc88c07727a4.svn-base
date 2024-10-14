@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+namespace FileUpload.Controllers
+{
+    public class WebServiceController : Controller
+    {
+        // GET: Upload
+        public ActionResult Index()
+        {
+            return View();
+        }
+        [HttpGet]
+        public ActionResult UploadFile()
+        {
+            return View();
+        }
+    
+        [HttpPost]
+        public ActionResult UploadFile(HttpPostedFileBase postedFile)
+        {
+            try
+            {
+                if (postedFile != null)
+                {
+                    string path = ConfigurationManager.AppSettings["PathUpload"]; ;
+
+
+                    //string path = Server.MapPath("C:/uploads/");
+
+                    if (!Directory.Exists(path))
+                    {
+                        Directory.CreateDirectory(path);
+                    }
+
+                    DateTime serverDate = DateTime.Now;
+                    string currentDateString = string.Format("{0}", serverDate.ToString("ssffffff"));
+
+                    postedFile.SaveAs(path + currentDateString + '_' + Path.GetFileName(postedFile.FileName));
+
+                    return Json(currentDateString + '_' + Path.GetFileName(postedFile.FileName), JsonRequestBehavior.AllowGet);
+                }
+                else
+                {
+
+                    return Json("File uploaded error.", JsonRequestBehavior.AllowGet);
+
+                }
+            }
+            catch
+            {
+                ViewBag.Message = "File upload failed!!";
+                return View();
+            }
+        }
+    }
+}
